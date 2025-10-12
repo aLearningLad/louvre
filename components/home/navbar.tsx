@@ -10,6 +10,9 @@ const Navbar = () => {
       {/* large screens */}
       <div className=" hidden lg:flex w-5/12 h-full justify-around ">
         <span className=" flex-8/12 flex justify-around items-center h-full ">
+          <a key={1} href="#about">
+            <p className=" text-[10px] ">ABOUT</p>
+          </a>
           {nav_links.map(({ href, id, title }, index) => (
             <Link key={id} href={href}>
               <p className=" text-[10px] ">{title}</p>
