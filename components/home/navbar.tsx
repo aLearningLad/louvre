@@ -12,7 +12,7 @@ const Navbar = () => {
         <span className=" flex-8/12 flex justify-around items-center h-full ">
           {nav_links.map(({ href, id, title }, index) => (
             <Link key={id} href={href}>
-              <p className=" text-[10px] font-light">{title}</p>
+              <p className=" text-[10px] ">{title}</p>
             </Link>
           ))}
         </span>

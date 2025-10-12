@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 const ralewayFont = Raleway({
   variable: "--raleway-font",
   subsets: ["latin"],
-  weight: ["200"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
