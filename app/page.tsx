@@ -12,7 +12,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className=" w-screen relative overflow-clip min-h-screen flex flex-col bg-blue-950/90 text-white">
+    <div className=" w-full relative overflow-hidden min-h-screen flex flex-col bg-blue-950/90 text-white">
       <Navbar />
       <Landing />
       <About />
