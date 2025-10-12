@@ -1,11 +1,11 @@
 import { nav_links } from "@/dev_data/nav_links";
 import Link from "next/link";
-import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav className=" w-full h-12 flex justify-center lg:justify-end items-center">
-      {/* mobile --> single button opens modal with about, projects, contact, github logo */}
+      {/* mobile --> button on landing opens modal with about, projects, contact, github logo */}
 
       {/* large screens */}
       <div className=" hidden lg:flex w-5/12 h-full justify-around ">
@@ -17,7 +17,11 @@ const Navbar = () => {
           ))}
         </span>
 
-        <span className=" flex-4/12 h-full flex justify-center items-center"></span>
+        <span className=" flex-4/12 h-full flex justify-center items-center">
+          <Link href={"https://github.com/aLearningLad/louvre"} target="_blank">
+            <FaGithub size={20} />
+          </Link>
+        </span>
       </div>
     </nav>
   );
