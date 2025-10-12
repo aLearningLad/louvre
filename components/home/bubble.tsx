@@ -1,19 +1,6 @@
+import { I_bubble } from "@/interfaces";
 import Image from "next/image";
 import React from "react";
-
-interface I_bubble {
-  top: string;
-  right: string;
-  width: string | number;
-  height: string | number;
-  skill: string;
-  backgroundColor: string;
-  icon?: React.ReactElement;
-  image_url?: string;
-  image_width?: number;
-  image_height?: number;
-  font_size: number;
-}
 
 const Bubble: React.FC<I_bubble> = ({
   right,

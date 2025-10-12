@@ -4,10 +4,13 @@ import { TiThMenu } from "react-icons/ti";
 const LandingLeft = () => {
   return (
     <div className=" w-full p-3 lg:p-0 h-screen lg:h-full lg:w-7/12 flex flex-col items-center lg:items-end justify-center ">
+      <div className=" w-7/12 mb-3 flex justify-start ">
+        <div className=" w-[8%] h-[1px] rounded-lg bg-white " />
+      </div>
       <div className=" w-full lg:w-7/12 h-fit flex flex-col text-center lg:text-start">
-        <h1 className=" text-3xl lg:text-xl">Hello, {"I'm"} Thato,</h1>
-        <h1 className=" text-3xl lg:text-xl">a full-stack developer</h1>
-        <h1 className=" text-3xl lg:text-xl">located in Cape Town</h1>
+        <h1 className=" text-3xl lg:text-2xl">Hello, {"I'm"} Thato,</h1>
+        <h1 className=" text-3xl lg:text-2xl">a full-stack developer</h1>
+        <h1 className=" text-3xl lg:text-2xl">located in Cape Town</h1>
         <h3 className=" text-xl lg:text-[14px] ">
           I build, deploy & document full-stack systems
         </h3>
