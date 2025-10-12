@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  font-family: var(--raleway-font), sans-serif;
   --background: #ffffff;
   --foreground: #171717;
 }
