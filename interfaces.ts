@@ -19,3 +19,8 @@ export interface I_empty_bubble {
   right: string;
   backgroundColor: string;
 }
+
+export interface I_store {
+  is_form: boolean;
+  set_is_form: (state: boolean) => void;
+}

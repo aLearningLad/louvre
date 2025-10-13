@@ -1,9 +1,5 @@
+import { I_store } from "@/interfaces";
 import { create } from "zustand";
-
-interface I_store {
-  is_form: boolean;
-  set_is_form: (state: boolean) => void;
-}
 
 export const useStore = create<I_store>()((set) => ({
   is_form: false,
