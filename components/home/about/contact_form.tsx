@@ -4,15 +4,20 @@ import { ChangeEvent, useState } from "react";
 
 const ContactForm = () => {
   const [full_name, set_full_name] = useState<string>("");
+  const [company, set_company] = useState<string>("");
+  const [email, set_email] = useState<string>("");
+  const [body, set_body] = useState<string>("");
 
   return (
     <form className=" w-full px-2 lg:w-10/12 h-[75%] items-center lg:items-start justify-around flex flex-col border-2 border-white">
+      {/* full name -> mandatory */}
       <div className=" w-full h-fit flex flex-col items-start text-start">
         <label className=" flex gap-[1px] items-center" htmlFor="full_name">
           <p className=" text-[6px]">FULL NAME</p>
           <p className=" text-sm text-red-600">*</p>
         </label>
         <input
+          name="full_name"
           type="text"
           placeholder="Eg. Tom Featherington"
           className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
@@ -21,6 +26,62 @@ const ContactForm = () => {
             set_full_name(e.target.value)
           }
         />
+      </div>
+
+      {/* company -> optional */}
+      <div className=" w-full h-fit flex flex-col items-start text-start">
+        <label className=" flex gap-[1px] items-center" htmlFor="company">
+          <p className=" text-[6px]">COMPANY NAME</p>
+          <p className=" text-sm text-red-600">*</p>
+        </label>
+        <input
+          name="company"
+          type="text"
+          placeholder="Eg. Wayne Enterprises Inc."
+          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
+          value={company}
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            set_company(e.target.value)
+          }
+        />
+      </div>
+
+      {/* email -> mandatory */}
+      <div className=" w-full h-fit flex flex-col items-start text-start">
+        <label className=" flex gap-[1px] items-center" htmlFor="email">
+          <p className=" text-[6px]">EMAIL</p>
+          <p className=" text-sm text-red-600">*</p>
+        </label>
+        <input
+          name="email"
+          type="text"
+          placeholder="Eg. masterwayne@batman.com"
+          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
+          value={email}
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            set_email(e.target.value)
+          }
+        />
+      </div>
+
+      {/* body -> mandatory */}
+      <div className=" w-full h-fit flex flex-col items-start text-start">
+        <label className=" flex gap-[1px] items-center" htmlFor="full_name">
+          <p className=" text-[6px]">{"LET'S"} BUILD</p>
+          <p className=" text-sm text-red-600">*</p>
+        </label>
+        <textarea
+          name="full_name"
+          placeholder="Eg. Mate, I need you to build me a Netflix replica. But for kitten videos. Stay with me now . . ."
+          className=" w-full py-5 focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-full rounded-[6px] bg-neutral-100/10 "
+          value={body}
+          onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
+            set_body(e.target.value)
+          }
+        />
+      </div>
+      <div className=" w-full h-14 flex items-start border-white border-2">
+        <button className=" w-[12px] h-[12px] rounded-[2px] flex justify-center items-center bg-cyan-500 "></button>
       </div>
     </form>
   );
