@@ -1,12 +1,14 @@
 "use client";
 
 import { ChangeEvent, useState } from "react";
+import { TiTick } from "react-icons/ti";
 
 const ContactForm = () => {
   const [full_name, set_full_name] = useState<string>("");
   const [company, set_company] = useState<string>("");
   const [email, set_email] = useState<string>("");
   const [body, set_body] = useState<string>("");
+  const [is_consented, set_is_consented] = useState<boolean>(false);
 
   return (
     <form className=" w-full px-2 lg:w-10/12 h-[75%] items-center lg:items-start justify-around flex flex-col border-2 border-white">
@@ -80,8 +82,26 @@ const ContactForm = () => {
           }
         />
       </div>
-      <div className=" w-full h-14 flex items-start border-white border-2">
-        <button className=" w-[12px] h-[12px] rounded-[2px] flex justify-center items-center bg-cyan-500 "></button>
+      <div className=" w-full h-14 flex items-start gap-3">
+        <button
+          onClick={() => set_is_consented((prev) => !prev)}
+          className=" w-[12px] h-[12px] rounded-[2px] flex justify-center items-center bg-pink-700 "
+        >
+          {is_consented && <TiTick color="white" size={10} />}
+        </button>
+        <p className="text-[9px] w-9/12">
+          I consent to my information being used so Thato can respond to my
+          message.
+        </p>
+        <button
+          className={`h-8 hover:scale-95 transition-all duration-300  cursor-pointer ${
+            is_consented
+              ? "brightness-100 hover:bg-white hover:text-black"
+              : "brightness-50"
+          } bg-pink-700 text-white text-[8px] w-3/12 rounded-[6px] flex justify-center items-center`}
+        >
+          Send Message
+        </button>
       </div>
     </form>
   );
