@@ -11,7 +11,7 @@ const ContactForm = () => {
   const [is_consented, set_is_consented] = useState<boolean>(false);
 
   return (
-    <form className=" w-full px-2 lg:w-10/12 h-[75%] items-center lg:items-start justify-around flex flex-col border-2 border-white">
+    <form className=" w-full px-2 lg:w-10/12 h-[85%] items-center lg:items-start justify-around flex flex-col border-2 border-white">
       {/* full name -> mandatory */}
       <div className=" w-full h-fit flex flex-col items-start text-start">
         <label className=" flex gap-[1px] items-center" htmlFor="full_name">
@@ -101,6 +101,11 @@ const ContactForm = () => {
           } bg-pink-700 text-white text-[8px] w-3/12 rounded-[6px] flex justify-center items-center`}
         >
           Send Message
+        </button>
+      </div>
+      <div className=" w-full flex justify-start h-fit">
+        <button className=" w-fit cursor-pointer h-8 rounded-[6px] bg-neutral-950/70 hover:scale-95 transition-all duration-300 ease-in-out px-7 text-[10px] fex justify-center items-center text-white hover:bg-black">
+          Cancel
         </button>
       </div>
     </form>

@@ -23,15 +23,14 @@ const AboutLeft = () => {
       </div>
 
       <div className=" flex flex-col items-start mt-12">
-        <h1 className="text-[10px]">Keen to chat?</h1>
-        <div className=" flex flex-col w-full mt-2">
+        <div className=" flex flex-col w-full h-fit gap-1">
           <ContactBtn />
           <Link
             href={
               "https://github.com/aLearningLad?tab=overview&from=2025-10-01&to=2025-10-14"
             }
             target="_blank"
-            className=" w-7/12 mt-8 cursor-pointer group flex justify-between items-center h-6 hover:pl-5 hover:border-none hover:h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
+            className=" w-7/12  cursor-pointer group flex justify-between items-center hover:pl-5 hover:border-none h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
           >
             <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
               Browse my Github{" "}
@@ -47,7 +46,7 @@ const AboutLeft = () => {
           </Link>
           <Link
             href={"/projects"}
-            className=" w-7/12 mt-8 cursor-pointer group flex justify-between items-center h-6 hover:pl-5 hover:border-none hover:h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
+            className=" w-7/12  cursor-pointer group flex justify-between items-center hover:pl-5 hover:border-none h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
           >
             <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
               My projects
