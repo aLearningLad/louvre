@@ -11,3 +11,9 @@ declare type T_landing_links = {
   icon: React.ReactElement;
   target: string;
 };
+
+declare type T_tech_tab_info = {
+  id: number;
+  title: string;
+  img_url: string;
+};

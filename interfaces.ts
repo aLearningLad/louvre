@@ -28,3 +28,9 @@ export interface I_store {
   currently: boolean;
   set_currently: () => void;
 }
+
+export interface I_tech_tab {
+  id: number;
+  title: string;
+  img_url: string;
+}
