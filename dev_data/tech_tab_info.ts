@@ -39,4 +39,14 @@ export const tech_tab_info: T_tech_tab_info[] = [
     title: "PostgreSQL",
     img_url: "/assets/sql.png",
   },
+  {
+    id: 9,
+    title: ".NET",
+    img_url: "/assets/dotnet.png",
+  },
+  {
+    id: 10,
+    title: "Tailwind CSS",
+    img_url: "/assets/tailwind.png",
+  },
 ];
