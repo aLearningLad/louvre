@@ -4,6 +4,7 @@ import { GiGears } from "react-icons/gi";
 import { FaCubesStacked } from "react-icons/fa6";
 import ContactBtn from "./contact_btn";
 import Link from "next/link";
+import TechBtn from "./tech_btn";
 
 const AboutLeft = () => {
   return (
@@ -25,7 +26,13 @@ const AboutLeft = () => {
         <h1 className="text-[10px]">Keen to chat?</h1>
         <div className=" flex flex-col w-full mt-2">
           <ContactBtn />
-          <span className=" w-7/12 mt-8 cursor-pointer group flex justify-between items-center h-6 hover:pl-5 hover:border-none hover:h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 ">
+          <Link
+            href={
+              "https://github.com/aLearningLad?tab=overview&from=2025-10-01&to=2025-10-14"
+            }
+            target="_blank"
+            className=" w-7/12 mt-8 cursor-pointer group flex justify-between items-center h-6 hover:pl-5 hover:border-none hover:h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
+          >
             <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
               Browse my Github{" "}
               <FaGithub
@@ -37,7 +44,7 @@ const AboutLeft = () => {
             <p className="text-[10px] group-hover:hidden transition-all duration-300 ease-in-out ">
               {">"}
             </p>
-          </span>
+          </Link>
           <Link
             href={"/projects"}
             className=" w-7/12 mt-8 cursor-pointer group flex justify-between items-center h-6 hover:pl-5 hover:border-none hover:h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
@@ -54,19 +61,7 @@ const AboutLeft = () => {
               {">"}
             </p>
           </Link>
-          <span className=" w-7/12 mt-8 cursor-pointer group flex justify-between items-center h-6 hover:pl-5 hover:border-none hover:h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 ">
-            <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
-              Tech stack
-              <FaCubesStacked
-                size={16}
-                color="white"
-                className=" group-hover:flex hidden "
-              />
-            </p>
-            <p className="text-[10px] group-hover:hidden transition-all duration-300 ease-in-out ">
-              {">"}
-            </p>
-          </span>
+          <TechBtn />
         </div>
       </div>
     </div>

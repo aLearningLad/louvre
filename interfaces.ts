@@ -23,4 +23,8 @@ export interface I_empty_bubble {
 export interface I_store {
   is_form: boolean;
   set_is_form: () => void;
+  is_tech: boolean;
+  set_is_tech: () => void;
+  currently: boolean;
+  set_currently: () => void;
 }
