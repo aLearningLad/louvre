@@ -10,15 +10,41 @@ const AboutLeft = () => {
   return (
     <div className=" w-full h-[80vh] lg:h-full lg:w-1/2 flex-col items-start justify-around ">
       <div className=" flex flex-col">
-        <h3 className=" text-[10px] ">About me</h3>
+        <h3 className=" text-[20px] ">About me</h3>
 
-        <h2 className=" text-[14px] ">
+        {/* <h2 className=" text-[14px] ">
           Software developer focused on building clean, scalable systems.
           Experienced in full-stack and backend development, including
           distributed architectures and multi-database solutions. Passionate
           about solving real-world problems with efficient, maintainable code.
           Always exploring new technologies and improving workflows to deliver
           production-ready systems.
+        </h2> */}
+        <h2 className=" text-[12px] w-10/12 ">
+          I focus on building clean, scalable systems.
+          <br />
+          <br />
+          My{" "}
+          <Link
+            target="_blank"
+            href={"https://github.com/aLearningLad/eventstream"}
+            className=" text-pink-600 underline"
+          >
+            <i>latest project</i>
+          </Link>{" "}
+          explores distributed API architectures and multi-database designs, all
+          made to sing via Kafka producers, a Docker container and Kafka
+          consumer flows.
+          <br />
+          <br />I enjoy tackling frontend code too — neatly stitching it to a
+          type-safe, server-function-based backend, as shown{" "}
+          <Link
+            className=" text-pink-600 underline"
+            href={"https://github.com/aLearningLad/platamigos_"}
+          >
+            <i>here</i>
+          </Link>
+          .
         </h2>
       </div>
 

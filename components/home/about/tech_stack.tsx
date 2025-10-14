@@ -67,14 +67,15 @@ const TechStack = () => {
       </div>
       <p className=" mt-5 text-[10px] w-8/12 text-center">
         {"I've"} just recently begun working more deeply with <i>Python</i> on
-        Kaggle. My grander aspirations point to data engineering and cloud
-        infrastructure, and I am developing skills using Google's BigQuery and
-        the Pandas library.
+        Kaggle. My broader aspirations lie in data engineering and cloud
+        infrastructure, and {"I'm"} developing skills using {"Google's"}{" "}
+        BigQuery and the Pandas library.
         <br />
-        <br />I will deploy comprehensive ETL pipelines and basic models
-        (trained on data I prepare myself) in due time, as my knowledge and
-        competence pertaining to data, machine learning and cloud development
-        and deployments compounds
+        <br />
+        In time, I aim to design and deploy comprehensive ETL pipelines and
+        lightweight machine learning models trained on data I prepare myself —
+        as my understanding of data systems, machine learning, and cloud
+        deployments continues to compound.
       </p>
 
       <Link
