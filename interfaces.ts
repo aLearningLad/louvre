@@ -34,3 +34,17 @@ export interface I_tech_tab {
   title: string;
   img_url: string;
 }
+
+export interface I_project_card {
+  id: number;
+  title: string;
+  subtitle: string;
+  desc: string;
+  live_link?: string;
+  repo_link: string;
+  video_link: string;
+  img1: string;
+  img2: string;
+  img3: string;
+  tech_stack: T_tech_tab_info[];
+}
