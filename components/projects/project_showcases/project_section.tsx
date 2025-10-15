@@ -3,6 +3,8 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 import { FcMoneyTransfer } from "react-icons/fc";
+import Image from "next/image";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const ProjectSection =
   // :
@@ -29,7 +31,11 @@ const ProjectSection =
         {/* project info */}
         <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
           {/* left side images --> ONLY ON LARGE SCREENS */}
-          <div className=" hidden lg:flex w-3/12 h-full flex-col items-end bg-neutral-100/30 rounded-l-2xl"></div>
+          <div className=" hidden space-y-4 lg:flex w-3/12 h-full flex-col items-end ">
+            <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg"></div>
+            <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg"></div>
+            <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg"></div>
+          </div>
 
           {/* middle video demo */}
           <div className=" w-full sm:w-10/12 md:w-8/12 w:h-7/12 bg-neutral-100/10 rounded-lg"></div>
@@ -94,9 +100,73 @@ const ProjectSection =
         </div>
 
         {/* tech stack details */}
-        <div className=" w-full h-[30%] lg:h-[25%] border-2 border-white "></div>
+        <div className=" w-full h-[30%] lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
+          <h3 className=" text-[10px]">Technologies I Used</h3>
+
+          {/* 3 here */}
+          <div className=" flex w-full items-center justify-center space-x-7">
+            <div className=" flex flex-col items-center text-center ">
+              <Image
+                src={"/assets/typescript.png"}
+                width={40}
+                height={40}
+                alt="typescript logo"
+              />
+              <p className=" text-[7px] text-white">Typescript</p>
+            </div>
+            <div className=" w-fit h-fit py-1 px-2 flex flex-col items-center text-center bg-white rounded-lg">
+              <Image
+                src={"/assets/sql.png"}
+                width={40}
+                height={40}
+                alt="PostgreSQL logo"
+              />
+              <p className=" text-[7px] text-black">postgreSQL</p>
+            </div>
+            <div className=" flex flex-col items-center text-center ">
+              <Image
+                src={"/assets/tailwind.png"}
+                width={40}
+                height={40}
+                alt="tailwind css logo"
+              />
+              <p className=" text-[7px] text-white">Tailwind CSS</p>
+            </div>
+          </div>
+
+          {/* 2 here */}
+          <div className=" flex w-full items-center justify-center space-x-7">
+            <div className=" flex flex-col items-center text-center bg-white py-1 px-2 rounded-[6px] ">
+              <Image
+                src={"/assets/zustand.png"}
+                width={30}
+                height={30}
+                alt="zustand logo"
+              />
+              <p className=" text-[7px] text-black">Zustand</p>
+            </div>
+            <div className=" flex flex-col items-center text-center overflow-clip rounded-[6px]">
+              <Image
+                src={"/assets/nextjs.png"}
+                width={30}
+                height={30}
+                alt="next.js logo"
+              />
+              <p className=" text-[7px] text-white">Next.js</p>
+            </div>
+          </div>
+        </div>
         {/* cta to scroll down ONLY ON LARGE SCREENS */}
-        <div className=" w-full hidden lg:flex h-[10%] border-2 border-white  "></div>
+        <div className=" w-full gap-2 hidden lg:flex h-[10%] justify-center items-center  ">
+          <FaAngleDoubleDown className=" text-pink-600" size={10} />
+
+          <Link href={"#"}>
+            <i className=" text-pink-600 underline text-[10px]">
+              EventStream API
+            </i>
+          </Link>
+          <FaAngleDoubleDown className=" text-pink-600" size={10} />
+        </div>
       </section>
     );
   };
