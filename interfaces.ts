@@ -48,3 +48,24 @@ export interface I_project_card {
   img3: string;
   tech_stack: T_tech_tab_info[];
 }
+
+export interface I_project_section {
+  img1: string;
+  img2: string;
+  img3: string;
+  video_url: string;
+  title: string;
+  subtitle: string;
+  category: string; // create enum --> 'full stack', 'frontend', 'API'
+  par1: string;
+  par2?: string;
+  par3?: string;
+  lesson_par1: string;
+  lesson_par2?: string;
+  lesson_par3?: string;
+  github_url: string;
+  live_link?: string;
+  tech_upper: string[];
+  tech_lower: string[];
+  next_project_link?: string;
+}

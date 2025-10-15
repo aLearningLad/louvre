@@ -104,7 +104,7 @@ const ProjectSection =
           <h3 className=" text-[10px]">Technologies I Used</h3>
 
           {/* 3 here */}
-          <div className=" flex w-full items-center justify-center space-x-7">
+          <div className=" flex w-full items-center justify-center space-x-12">
             <div className=" flex flex-col items-center text-center ">
               <Image
                 src={"/assets/typescript.png"}
