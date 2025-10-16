@@ -24,7 +24,6 @@ declare type T_tech_card = {
 };
 
 declare type T_individual_project = {
-  id: number;
   img1: string;
   img2: string;
   img3: string;
@@ -44,4 +43,5 @@ declare type T_individual_project = {
   tech_lower: T_tech_card[];
   next_project_link?: string;
   subtitle_icon?: React.ReactElement;
+  id: string;
 };

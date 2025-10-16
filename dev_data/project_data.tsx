@@ -2,7 +2,7 @@ import { FcMoneyTransfer } from "react-icons/fc";
 
 export const project_data: T_individual_project[] = [
   {
-    id: 1,
+    id: "platamigos",
     img1: "",
     img2: "",
     img3: "",
@@ -29,6 +29,6 @@ export const project_data: T_individual_project[] = [
     live_link: "#",
     tech_upper: [],
     tech_lower: [],
-    next_project_link: "#event stream here",
+    next_project_link: "/#eventstream",
   },
 ];

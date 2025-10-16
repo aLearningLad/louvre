@@ -69,4 +69,5 @@ export interface I_project_section {
   tech_upper: T_tech_card[];
   tech_lower: T_tech_card[];
   next_project_link?: string;
+  id: string;
 }
