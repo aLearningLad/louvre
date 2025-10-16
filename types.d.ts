@@ -30,7 +30,8 @@ declare type T_individual_project = {
   video_url: string;
   title: string;
   subtitle: string;
-  category: string; // create enum --> 'full stack', 'frontend', 'API'
+  category1: string; // create enum --> 'full stack', 'frontend', 'API'
+  category2?: string; // create enum --> 'full stack', 'frontend', 'API'
   par1: string;
   par2?: string;
   par3?: string;
@@ -44,4 +45,5 @@ declare type T_individual_project = {
   next_project_link?: string;
   subtitle_icon?: React.ReactElement;
   id: string;
+  next_project_name?: string;
 };

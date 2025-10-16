@@ -7,7 +7,6 @@ import Image from "next/image";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
 const ProjectSection: React.FC<I_project_section> = ({
-  category,
   github_url,
   img1,
   img2,
@@ -27,6 +26,9 @@ const ProjectSection: React.FC<I_project_section> = ({
   par3,
   subtitle_icon,
   id,
+  category1,
+  category2,
+  next_project_name,
 }) => {
   return (
     <section
@@ -55,8 +57,13 @@ const ProjectSection: React.FC<I_project_section> = ({
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
           <span className="  flex items-center gap-1 ">
             <i className="text-[14px]">{title}</i>
+            {category2 && (
+              <p className=" text-[6px] w-fit h-fit px-1 py-1 bg-pink-600 rounded-[4px] ">
+                {category2}
+              </p>
+            )}
             <p className=" text-[6px] w-fit h-fit px-1 py-1 bg-teal-600 rounded-[4px] ">
-              {category}
+              {category1}
             </p>
           </span>
           <h4 className=" text-[12px] flex gap-[2px]">
@@ -76,7 +83,9 @@ const ProjectSection: React.FC<I_project_section> = ({
                 <p className=" text-[10px]">
                   {lesson_par1} <br />
                   <br />
-                  {lesson_par2}{" "}
+                  {lesson_par2} <br />
+                  <br />
+                  {lesson_par3 && lesson_par3}
                 </p>
               </div>
             </div>
@@ -165,7 +174,7 @@ const ProjectSection: React.FC<I_project_section> = ({
 
           <Link href={next_project_link}>
             <i className=" text-pink-600 underline text-[10px]">
-              EventStream API
+              {next_project_name}
             </i>
           </Link>
           <FaAngleDoubleDown className=" text-pink-600" size={10} />

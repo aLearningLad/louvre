@@ -57,7 +57,8 @@ export interface I_project_section {
   title: string;
   subtitle: string;
   subtitle_icon?: React.ReactElement;
-  category: string; // create enum --> 'full stack', 'frontend', 'API'
+  category1: string; // create enum --> 'full stack', 'frontend', 'API'
+  category2?: string; // create enum --> 'full stack', 'frontend', 'API'
   par1: string;
   par2?: string;
   par3?: string;
@@ -70,4 +71,5 @@ export interface I_project_section {
   tech_lower: T_tech_card[];
   next_project_link?: string;
   id: string;
+  next_project_name?: string;
 }

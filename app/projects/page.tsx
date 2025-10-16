@@ -8,7 +8,6 @@ const ProjectsPage = () => {
       {project_data.map(
         (
           {
-            category,
             github_url,
             id,
             img1,
@@ -28,11 +27,15 @@ const ProjectsPage = () => {
             par2,
             par3,
             subtitle_icon,
+            category1,
+            category2,
+            next_project_name,
           },
           index
         ) => (
           <ProjectSection
-            category={category}
+            category1={category1}
+            category2={category2}
             github_url={github_url}
             img1={img1}
             img2={img2}
@@ -53,6 +56,7 @@ const ProjectsPage = () => {
             par3={par3}
             subtitle_icon={subtitle_icon}
             id={id}
+            next_project_name={next_project_name}
           />
         )
       )}
