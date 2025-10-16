@@ -56,6 +56,7 @@ export interface I_project_section {
   video_url: string;
   title: string;
   subtitle: string;
+  subtitle_icon?: React.ReactElement;
   category: string; // create enum --> 'full stack', 'frontend', 'API'
   par1: string;
   par2?: string;
@@ -65,7 +66,7 @@ export interface I_project_section {
   lesson_par3?: string;
   github_url: string;
   live_link?: string;
-  tech_upper: string[];
-  tech_lower: string[];
+  tech_upper: T_tech_card[];
+  tech_lower: T_tech_card[];
   next_project_link?: string;
 }
