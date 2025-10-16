@@ -2,6 +2,7 @@ import { enums } from "@/enums";
 import { FcMoneyTransfer } from "react-icons/fc";
 import { BsServer } from "react-icons/bs";
 import { FaMobileScreenButton } from "react-icons/fa6";
+import { GiTeamIdea } from "react-icons/gi";
 
 export const project_data: T_individual_project[] = [
   {
@@ -89,32 +90,51 @@ export const project_data: T_individual_project[] = [
     next_project_name: "hiatus",
   },
   {
-    id: "hiatus",
+    id: "codeRume",
     img1: "",
     img2: "",
     img3: "",
-    subtitle_icon: <FaMobileScreenButton size={14} />,
+    subtitle_icon: <GiTeamIdea size={14} />,
     video_url: "",
-    title: "hiatus",
-    subtitle: "Simplified Leave Management for Small Teams",
+    title: "codeRume",
+    subtitle: "Live Coding Collaboration Platform",
     category1: enums.FLS, // create enum --> 'full stack', 'frontend', 'API'
-    category2: enums.MBL, // create enum --> 'full stack', 'frontend', 'API'
-    par1: `Client project built for King Pie Tygervalley
+    category2: enums.RLT, // create enum --> 'full stack', 'frontend', 'API'
+    par1: `A lightweight coding collaboration app built for rookies and savants to intermingle, learn together and share.
     `,
-    par2: `Role-based UIs and permissions. Admin can create an account, set annual leave days & share the team ID. Admin can then manage their team, approve/deny leave and send communications via push notifications and email. Employees can apply for leave, withdraw applications, and manage remaining days`,
-    par3: `Routes are available all users, but only 
-    registered users can add route data.
-    Additionally, users can only edit a route they created`, // ----> add this to Github README instead
-    lesson_par1: `I learned Flutter!.
+    par2: `Users collaborate on a single integrated development environment in real time and can raise discussions in their chat`,
+    lesson_par1: `Because of Next.js's serverless architecture, I learned to integrate realtime communication without relying on socket.io nor a traditional Node.js server
 `,
-    lesson_par2: `Widgets took some getting used to, as did Flutter's styling methodology, special classes for API responses and state management
-`,
-    lesson_par3: `I also learned to implement push notifications via Firebase`,
-    github_url: "https://github.com/aLearningLad/RoadWorkClub",
+
+    github_url: "https://github.com/aLearningLad/coderumeV2",
     live_link: "#",
     tech_upper: [],
     tech_lower: [],
     next_project_link: "#",
-    next_project_name: "tutorFlow",
+    next_project_name: "Twitterverse",
+  },
+  {
+    id: "twitterverse",
+    img1: "",
+    img2: "",
+    img3: "",
+    subtitle_icon: <GiTeamIdea size={14} />,
+    video_url: "",
+    title: "codeRume",
+    subtitle: "Live Coding Collaboration Platform",
+    category1: enums.FLS, // create enum --> 'full stack', 'frontend', 'API'
+    category2: enums.RLT, // create enum --> 'full stack', 'frontend', 'API'
+    par1: `A lightweight coding collaboration app built for rookies and savants to intermingle, learn together and share.
+    `,
+    par2: `Users collaborate on a single integrated development environment in real time and can raise discussions in their chat`,
+    lesson_par1: `Because of Next.js's serverless architecture, I learned to integrate realtime communication without relying on socket.io nor a traditional Node.js server
+`,
+
+    github_url: "https://github.com/aLearningLad/coderumeV2",
+    live_link: "#",
+    tech_upper: [],
+    tech_lower: [],
+    next_project_link: "#",
+    next_project_name: "Twitterverse",
   },
 ];

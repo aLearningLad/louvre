@@ -3,4 +3,5 @@ export const enums = {
   FRN: "Client Side",
   API: "API",
   MBL: "Mobile App",
+  RLT: "Real-Time",
 };
