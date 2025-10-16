@@ -33,7 +33,7 @@ const ProjectSection: React.FC<I_project_section> = ({
   return (
     <section
       id={id}
-      className=" p-2 h-screen w-full flex justify-center items-center flex-col"
+      className=" p-2 h-fit rounded-lg bg-neutral-200/10 lg:bg-transparent lg:h-screen w-full flex justify-center items-center flex-col"
     >
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
@@ -48,39 +48,39 @@ const ProjectSection: React.FC<I_project_section> = ({
           <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg"></div>
         </div>
 
-        {/* middle video demo */}
-        <div className=" w-full sm:w-10/12 md:w-8/12 w:h-7/12 bg-neutral-100/10 rounded-lg">
+        {/* middle video demo on large screens only */}
+        <div className=" w-full hidden lg:flex sm:w-10/12 md:w-8/12 w:h-7/12 bg-neutral-100/10 rounded-lg">
           video loop
         </div>
 
         {/* right side info / bottom on mobile  */}
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
-          <span className="  flex items-center gap-1 ">
-            <i className="text-[14px]">{title}</i>
+          <span className="  flex items-center gap-3 md:gap-2 lg:gap-1 ">
+            <i className=" text-4xl md:text-2xl lg:text-[14px]">{title}</i>
             {category2 && (
-              <p className=" text-[6px] w-fit h-fit px-1 py-1 bg-pink-600 rounded-[4px] ">
+              <p className=" text-[14px] lg:text-[6px] w-fit h-fit px-1 py-1 bg-pink-600 rounded-[4px] ">
                 {category2}
               </p>
             )}
-            <p className=" text-[6px] w-fit h-fit px-1 py-1 bg-teal-600 rounded-[4px] ">
+            <p className=" text-[14px] lg:text-[6px] w-fit h-fit px-1 py-1 bg-teal-600 rounded-[4px] ">
               {category1}
             </p>
           </span>
-          <h4 className=" text-[12px] flex gap-[2px]">
+          <h4 className=" text-xl lg:text-[12px] flex gap-[2px]">
             {subtitle} {subtitle_icon}
           </h4>
           <div>
-            <div className=" text-[10px] w-full md:w-11/12">
+            <div className=" text-lg mt-5 lg:mt-0 lg:text-[10px] w-full md:w-11/12">
               {par1}
               <br />
               <br />
               {par2} <br />
               <br />
               <div className=" w-full flex flex-col items-start gap-2">
-                <p className=" text-[10px] font-semibold flex gap-[2px]">
+                <p className=" text-xl lg:text-[10px] font-semibold flex gap-[2px]">
                   Main lesson <GiBrain size={12} color="pink" /> :
                 </p>
-                <p className=" text-[10px]">
+                <p className=" text-lg lg:text-[10px]">
                   {lesson_par1} <br />
                   <br />
                   {lesson_par2} <br />
