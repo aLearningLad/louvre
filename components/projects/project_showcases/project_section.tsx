@@ -33,7 +33,7 @@ const ProjectSection: React.FC<I_project_section> = ({
   return (
     <section
       id={id}
-      className="p-3 h-fit rounded-xl bg-neutral-100/10 lg:bg-transparent lg:h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 h-fit border-4 border-white snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
     >
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
