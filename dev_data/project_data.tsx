@@ -120,21 +120,17 @@ export const project_data: T_individual_project[] = [
     img3: "",
     subtitle_icon: <GiTeamIdea size={14} />,
     video_url: "",
-    title: "codeRume",
-    subtitle: "Live Coding Collaboration Platform",
-    category1: enums.FLS, // create enum --> 'full stack', 'frontend', 'API'
-    category2: enums.RLT, // create enum --> 'full stack', 'frontend', 'API'
-    par1: `A lightweight coding collaboration app built for rookies and savants to intermingle, learn together and share.
+    title: "Twitterverse",
+    subtitle: "Twitter Frontend Clone",
+    category1: enums.FRN, // create enum --> 'full stack', 'frontend', 'API'
+    par1: `This is a tiny hobby project I built two years ago, just after Twitter was renamed to X.com
     `,
-    par2: `Users collaborate on a single integrated development environment in real time and can raise discussions in their chat`,
-    lesson_par1: `Because of Next.js's serverless architecture, I learned to integrate realtime communication without relying on socket.io nor a traditional Node.js server
+    lesson_par1: `I tried to mimic Twitter's UI and basic functionality such as tweeting, viewing community tweets, news sections, applying for premium membership; and storing, altering and using state across different components to manipulate the UI.
 `,
 
-    github_url: "https://github.com/aLearningLad/coderumeV2",
+    github_url: "https://github.com/aLearningLad/twitterverse",
     live_link: "#",
     tech_upper: [],
     tech_lower: [],
-    next_project_link: "#",
-    next_project_name: "Twitterverse",
   },
 ];
