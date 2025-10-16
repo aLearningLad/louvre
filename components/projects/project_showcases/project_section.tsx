@@ -33,7 +33,7 @@ const ProjectSection: React.FC<I_project_section> = ({
   return (
     <section
       id={id}
-      className=" p-2 h-fit rounded-lg bg-neutral-200/10 lg:bg-transparent lg:h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 h-fit rounded-xl bg-neutral-100/10 lg:bg-transparent lg:h-screen w-full flex justify-center items-center flex-col"
     >
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
@@ -89,11 +89,11 @@ const ProjectSection: React.FC<I_project_section> = ({
                 </p>
               </div>
             </div>
-            <div className=" w-full h-full flex justify-start items-center gap-3 mt-5">
+            <div className=" w-full h-full flex justify-center lg:justify-start items-center gap-6 lg:gap-3 mt-5">
               <Link
                 href={github_url}
                 target="_blank"
-                className=" text-[12px] text-black hover:text-white cursor-pointer hover:bg-black transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-fit px-5 h-6 rounded-[4px] bg-neutral-100 "
+                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-black transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-fit px-5 h-12 lg:h-6 rounded-[12px] lg:rounded-[4px] bg-neutral-100 "
               >
                 <FaGithub size={18} />
               </Link>
@@ -101,7 +101,7 @@ const ProjectSection: React.FC<I_project_section> = ({
               {live_link && (
                 <Link
                   href={live_link}
-                  className=" text-[12px] flex items-center justify-center w-fit px-5 h-6 rounded-[4px] bg-neutral-100 hover:bg-black hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
+                  className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-5 h-12 lg:h-6 rounded-[10px] lg:rounded-[4px] bg-neutral-100 hover:bg-black hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
                 >
                   Open
                 </Link>
@@ -111,11 +111,11 @@ const ProjectSection: React.FC<I_project_section> = ({
         </div>
       </div>
       {/* tech stack details */}
-      <div className=" w-full h-[30%] lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
-        <h3 className=" text-[10px]">Technologies I Used</h3>
+      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-0 lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
+        <h3 className=" text-xl lg:text-[10px]">Technologies I Used</h3>
 
         {/* 3 here */}
-        <div className=" flex w-full items-center justify-center space-x-12">
+        <div className=" flex w-full items-center justify-center space-x-12 space-y-4 lg:space-y-1">
           <div className=" flex flex-col items-center text-center ">
             <Image
               src={"/assets/typescript.png"}
@@ -123,7 +123,7 @@ const ProjectSection: React.FC<I_project_section> = ({
               height={40}
               alt="typescript logo"
             />
-            <p className=" text-[7px] text-white">Typescript</p>
+            <p className=" text-lg lg:text-[7px] text-white">Typescript</p>
           </div>
           <div className=" w-fit h-fit py-1 px-2 flex flex-col items-center text-center bg-white rounded-lg">
             <Image
@@ -132,7 +132,7 @@ const ProjectSection: React.FC<I_project_section> = ({
               height={40}
               alt="PostgreSQL logo"
             />
-            <p className=" text-[7px] text-black">postgreSQL</p>
+            <p className=" text-lg lg:text-[7px] text-black">postgreSQL</p>
           </div>
           <div className=" flex flex-col items-center text-center ">
             <Image
@@ -141,7 +141,7 @@ const ProjectSection: React.FC<I_project_section> = ({
               height={40}
               alt="tailwind css logo"
             />
-            <p className=" text-[7px] text-white">Tailwind CSS</p>
+            <p className=" text-lg lg:text-[7px] text-white">Tailwind CSS</p>
           </div>
         </div>
 
@@ -154,7 +154,7 @@ const ProjectSection: React.FC<I_project_section> = ({
               height={30}
               alt="zustand logo"
             />
-            <p className=" text-[7px] text-black">Zustand</p>
+            <p className=" text-lg lg:text-[7px] text-black">Zustand</p>
           </div>
           <div className=" flex flex-col items-center text-center overflow-clip rounded-[6px]">
             <Image
@@ -163,7 +163,7 @@ const ProjectSection: React.FC<I_project_section> = ({
               height={30}
               alt="next.js logo"
             />
-            <p className=" text-[7px] text-white">Next.js</p>
+            <p className=" text-lg lg:text-[7px] text-white">Next.js</p>
           </div>
         </div>
       </div>
