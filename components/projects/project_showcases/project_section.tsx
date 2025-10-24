@@ -120,46 +120,13 @@ const ProjectSection: React.FC<I_project_section> = ({
           {tech_upper.map((tab, index) => (
             <>{tab}</>
           ))}
-          <div className=" flex flex-col items-center text-center ">
-            <Image
-              src={"/assets/typescript.png"}
-              width={40}
-              height={40}
-              alt="typescript logo"
-            />
-            <p className=" text-lg lg:text-[7px] text-white">Typescript</p>
-          </div>
-          <div className=" w-fit h-fit py-1 px-2 flex flex-col items-center text-center bg-white rounded-lg">
-            <Image
-              src={"/assets/sql.png"}
-              width={40}
-              height={40}
-              alt="PostgreSQL logo"
-            />
-            <p className=" text-lg lg:text-[7px] text-black">postgreSQL</p>
-          </div>
-          <div className=" flex flex-col items-center text-center ">
-            <Image
-              src={"/assets/tailwind.png"}
-              width={40}
-              height={40}
-              alt="tailwind css logo"
-            />
-            <p className=" text-lg lg:text-[7px] text-white">Tailwind CSS</p>
-          </div>
         </div>
 
         {/* 2 here */}
         <div className=" flex w-full items-center justify-center space-x-7">
-          <div className=" flex flex-col items-center text-center bg-white py-1 px-2 rounded-[6px] ">
-            <Image
-              src={"/assets/zustand.png"}
-              width={30}
-              height={30}
-              alt="zustand logo"
-            />
-            <p className=" text-lg lg:text-[7px] text-black">Zustand</p>
-          </div>
+          {tech_lower.map((tab, index) => (
+            <>{tab}</>
+          ))}
           <div className=" flex flex-col items-center text-center overflow-clip rounded-[6px]">
             <Image
               src={"/assets/nextjs.png"}

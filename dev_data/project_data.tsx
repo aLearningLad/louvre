@@ -5,6 +5,9 @@ import { FaMobileScreenButton } from "react-icons/fa6";
 import { GiTeamIdea } from "react-icons/gi";
 import Image from "next/image";
 import MongoTab from "@/components/projects/project_showcases/stack_tabs/mongo_tab";
+import SQLTab from "@/components/projects/project_showcases/stack_tabs/sql_tab";
+import TypescriptTab from "@/components/projects/project_showcases/stack_tabs/typescript_tab";
+import TailwindTab from "@/components/projects/project_showcases/stack_tabs/tailwind_tab";
 
 export const project_data: T_individual_project[] = [
   {
@@ -33,8 +36,12 @@ export const project_data: T_individual_project[] = [
 `,
     github_url: "https://github.com/aLearningLad/platamigos",
     live_link: "#",
-    tech_upper: [<MongoTab key={1} />],
-    tech_lower: [],
+    tech_upper: [
+      <MongoTab key={1} />,
+      <SQLTab key={2} />,
+      <TypescriptTab key={3} />,
+    ],
+    tech_lower: [<TailwindTab key={4} />],
     next_project_link: "/projects/#eventstream",
     next_project_name: "EventStream API",
   },
