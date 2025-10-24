@@ -18,6 +18,10 @@ import DockerTab from "@/components/projects/project_showcases/stack_tabs/docker
 import NodeTab from "@/components/projects/project_showcases/stack_tabs/node_tab";
 import BcryptTab from "@/components/projects/project_showcases/stack_tabs/bcrypt_tab";
 import PostmanTab from "@/components/projects/project_showcases/stack_tabs/postman_tab";
+import DotnetTab from "@/components/projects/project_showcases/stack_tabs/dotnet_tab";
+import MSSQLTab from "@/components/projects/project_showcases/stack_tabs/mssql_tab";
+import SeesharpTab from "@/components/projects/project_showcases/stack_tabs/seesharp_tab";
+import JWTTab from "@/components/projects/project_showcases/stack_tabs/jwt_tab";
 
 export const project_data: T_individual_project[] = [
   {
@@ -117,7 +121,12 @@ export const project_data: T_individual_project[] = [
   `,
     github_url: "https://github.com/aLearningLad/RoadWorkClub",
     live_link: "#",
-    tech_upper: [],
+    tech_upper: [
+      <DotnetTab key={111} />,
+      <MSSQLTab key={222} />,
+      <SeesharpTab key={333} />,
+      <JWTTab key={444} />,
+    ],
     tech_lower: [],
     next_project_link: "#",
     next_project_name: "hiatus",
