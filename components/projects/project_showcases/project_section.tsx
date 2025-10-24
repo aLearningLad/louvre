@@ -112,7 +112,7 @@ const ProjectSection: React.FC<I_project_section> = ({
         </div>
       </div>
       {/* tech stack details */}
-      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-0 lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
+      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-3 lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
         <h3 className=" text-xl lg:text-[10px]">Technologies I Used</h3>
 
         {/* 3 here */}
