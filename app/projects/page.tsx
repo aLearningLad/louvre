@@ -6,33 +6,30 @@ const ProjectsPage = () => {
   return (
     <div className=" w-full h-screen overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 gap-20 md:gap-12 lg:gap-0 flex flex-col">
       {project_data.map(
-        (
-          {
-            github_url,
-            id,
-            img1,
-            img2,
-            img3,
-            lesson_par1,
-            par1,
-            subtitle,
-            tech_lower,
-            tech_upper,
-            title,
-            video_url,
-            lesson_par2,
-            lesson_par3,
-            live_link,
-            next_project_link,
-            par2,
-            par3,
-            subtitle_icon,
-            category1,
-            category2,
-            next_project_name,
-          },
-          index
-        ) => (
+        ({
+          github_url,
+          id,
+          img1,
+          img2,
+          img3,
+          lesson_par1,
+          par1,
+          subtitle,
+          tech_lower,
+          tech_upper,
+          title,
+          video_url,
+          lesson_par2,
+          lesson_par3,
+          live_link,
+          next_project_link,
+          par2,
+          par3,
+          subtitle_icon,
+          category1,
+          category2,
+          next_project_name,
+        }) => (
           <ProjectSection
             category1={category1}
             category2={category2}

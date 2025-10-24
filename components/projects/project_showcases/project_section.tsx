@@ -5,6 +5,7 @@ import { GiBrain } from "react-icons/gi";
 import { FcMoneyTransfer } from "react-icons/fc";
 import Image from "next/image";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import TechTab from "@/components/home/about/tech_tab";
 
 const ProjectSection: React.FC<I_project_section> = ({
   github_url,
@@ -116,6 +117,9 @@ const ProjectSection: React.FC<I_project_section> = ({
 
         {/* 3 here */}
         <div className=" flex w-full items-center justify-center space-x-12 space-y-4 lg:space-y-1">
+          {tech_upper.map((tab, index) => (
+            <>{tab}</>
+          ))}
           <div className=" flex flex-col items-center text-center ">
             <Image
               src={"/assets/typescript.png"}

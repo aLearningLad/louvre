@@ -40,7 +40,7 @@ declare type T_individual_project = {
   lesson_par3?: string;
   github_url: string;
   live_link?: string;
-  tech_upper: T_tech_card[];
+  tech_upper: React.HTMLDivElement;
   tech_lower: T_tech_card[];
   next_project_link?: string;
   subtitle_icon?: React.ReactElement;

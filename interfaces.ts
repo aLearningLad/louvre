@@ -30,7 +30,7 @@ export interface I_store {
 }
 
 export interface I_tech_tab {
-  id: number;
+  id?: number;
   title: string;
   img_url: string;
 }
