@@ -8,6 +8,9 @@ import MongoTab from "@/components/projects/project_showcases/stack_tabs/mongo_t
 import SQLTab from "@/components/projects/project_showcases/stack_tabs/sql_tab";
 import TypescriptTab from "@/components/projects/project_showcases/stack_tabs/typescript_tab";
 import TailwindTab from "@/components/projects/project_showcases/stack_tabs/tailwind_tab";
+import NextjsTab from "@/components/projects/project_showcases/stack_tabs/nextjs_tab";
+import RedisTab from "@/components/projects/project_showcases/stack_tabs/redis_tab";
+import Upstash_Tab from "@/components/projects/project_showcases/stack_tabs/upstash_tab";
 
 export const project_data: T_individual_project[] = [
   {
@@ -20,28 +23,28 @@ export const project_data: T_individual_project[] = [
     title: "Platamigos",
     subtitle: "A demo peer-lending platform",
     category1: enums.FLS,
-    par1: "Users can request loans, compare offers, and choose which toaccept.",
+    par1: "Users can request loans, compare offers, and choose which to accept.",
     par2: `User has the choice to either become a debtor, a creditor, or
                 both. Debt balances, credit score and accrued income are all
                 calculated and shown`,
-    lesson_par1: `                    I learned how to think about caching. What, when and how to
-                    cache. I decided to forgo Next.js's built-in caching in
-                    favor of Redis, and learned to implement Upstash and call it
+    lesson_par1: `                   Caching! What, when & how to
+                    cache. I used Redis & Upstash during
                     during auth and CRUD events: fetch and cache on sign in and
                     loan-related changes; clear on sign out.
 `,
-    lesson_par2: `                    I also learned valuable lessons pertaining to
-                    normalizing data. No duplication, no redundant entries.
-                    Indexing and joining.
+    lesson_par2: `                    I also learned valuable lessons on
+                    normalizing data. No duplication nor redundant entries, and clean
+                    ndexing and joining.
 `,
     github_url: "https://github.com/aLearningLad/platamigos",
     live_link: "#",
     tech_upper: [
-      <MongoTab key={1} />,
-      <SQLTab key={2} />,
+      <SQLTab key={1} />,
+      <Upstash_Tab key={6} />,
+      <RedisTab key={2} />,
       <TypescriptTab key={3} />,
     ],
-    tech_lower: [<TailwindTab key={4} />],
+    tech_lower: [<TailwindTab key={4} />, <NextjsTab key={5} />],
     next_project_link: "/projects/#eventstream",
     next_project_name: "EventStream API",
   },

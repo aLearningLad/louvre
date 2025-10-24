@@ -71,7 +71,7 @@ const ProjectSection: React.FC<I_project_section> = ({
             {subtitle} {subtitle_icon}
           </h4>
           <div>
-            <div className=" text-lg mt-5 lg:mt-0 lg:text-[10px] w-full md:w-11/12">
+            <div className=" text-lg mt-5 lg:mt-0 lg:text-[10px] w-full md:w-11/12 lg:w-full">
               {par1}
               <br />
               <br />
@@ -127,15 +127,6 @@ const ProjectSection: React.FC<I_project_section> = ({
           {tech_lower.map((tab, index) => (
             <>{tab}</>
           ))}
-          <div className=" flex flex-col items-center text-center overflow-clip rounded-[6px]">
-            <Image
-              src={"/assets/nextjs.png"}
-              width={30}
-              height={30}
-              alt="next.js logo"
-            />
-            <p className=" text-lg lg:text-[7px] text-white">Next.js</p>
-          </div>
         </div>
       </div>
       {/* cta to scroll down ONLY ON LARGE SCREENS */}
