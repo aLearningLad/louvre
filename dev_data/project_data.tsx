@@ -124,10 +124,10 @@ export const project_data: T_individual_project[] = [
     tech_upper: [
       <DotnetTab key={111} />,
       <MSSQLTab key={222} />,
-      <SeesharpTab key={333} />,
+
       <JWTTab key={444} />,
     ],
-    tech_lower: [],
+    tech_lower: [<SeesharpTab key={333} />],
     next_project_link: "#",
     next_project_name: "hiatus",
   },
