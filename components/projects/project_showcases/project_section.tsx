@@ -161,6 +161,7 @@ const ProjectSection: React.FC<I_project_section> = ({
   }
 
   if (is_type === enums.API) {
+    const all_tech: T_tech_card[] = [...tech_upper, ...tech_lower];
     return (
       <section
         id={id}
@@ -177,7 +178,7 @@ const ProjectSection: React.FC<I_project_section> = ({
         </Link>
 
         {/* project name and info */}
-        <div className=" w-full h-[25%] border-2 flex-col border-white flex justify-center items-center px-1 md:px-3 lg:px-20 text-center  ">
+        <div className=" w-full h-[25%] flex-col flex justify-center items-center px-1 md:px-3 lg:px-20 text-center  ">
           <span className="  flex items-center gap-3 md:gap-2 lg:gap-1 ">
             <i className=" text-4xl md:text-2xl lg:text-[14px]">{title}</i>
             {category2 && (
@@ -192,17 +193,36 @@ const ProjectSection: React.FC<I_project_section> = ({
           <h4 className=" text-xl lg:text-[12px] flex gap-[2px]">
             {subtitle} {subtitle_icon}
           </h4>
-          <button className=" w-full sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-5 h-12 mt-3 lg:h-8 bg-white text-black text-[14px] lg:text-[12px]">
+          <button className=" w-full hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-5 h-12 mt-3 lg:h-8 bg-white text-black text-[14px] lg:text-[12px]">
             {/* this opens modal with full details --> description, lessons and all from project data */}
             More
           </button>
         </div>
 
         {/* demo routes with dynamic diagrams */}
-        <div className=" w-full h-[60%] bg-slate-800"></div>
+        <div className=" w-full h-[60%] bg-slate-800 flex flex-col items-center ">
+          <h3 className=" text-[12px]">
+            Route Architecture Examples - See GitHub for full documentation{" "}
+          </h3>
+          {/* dyanmic part here to show excalidraw images */}
+          <div className=" w-full h-full border-2 border-white flex">
+            {/* side bar to pick route */}
+            <div className=" w-4/12 h-full border-2 border-orange-400 flex flex-col"></div>
+
+            {/* route image shown here */}
+            <div className=" w-8/12 h-full flex justify-center items-center px-12 py-4 rounded-lg bg-slate-600"></div>
+          </div>
+        </div>
 
         {/* tech stack */}
-        <div className=" w-full h-[15%]"></div>
+        <div className=" w-full h-[15%] hidden lg:flex flex-col px-12 items-center mt-2 gap-1">
+          <p className="text-[10px]">Technologies I used</p>
+          <div className="flex items-center justify-around w-full">
+            {all_tech.map((tab) => (
+              <>{tab}</>
+            ))}
+          </div>
+        </div>
       </section>
     );
   }
