@@ -1,3 +1,4 @@
+import EventStream from "@/components/eventstream/eventstream";
 import ProjectSection from "@/components/projects/project_showcases/project_section";
 import { project_data } from "@/dev_data/project_data";
 import React from "react";
@@ -63,6 +64,7 @@ const ProjectsPage = () => {
           />
         )
       )}
+      <EventStream />
     </div>
   );
 };
