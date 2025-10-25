@@ -100,9 +100,27 @@ export const project_data: T_individual_project[] = [
     route_demos: [
       {
         id: 1282,
-        route_name: "/api/v1/create-event",
+        route_name: "/api/v1/new-project",
         img_setter_fxn: () => {},
         route_type: "POST",
+      },
+      {
+        id: 83726,
+        route_name: "/api/v1/event/:event_id",
+        img_setter_fxn: () => {},
+        route_type: "GET",
+      },
+      {
+        id: 4672911,
+        route_name: "/api/v1/attendee/join-waiting-list",
+        img_setter_fxn: () => {},
+        route_type: "POST",
+      },
+      {
+        id: 19938264,
+        route_name: "/api/v1/organizer/delete-account/:id",
+        img_setter_fxn: () => {},
+        route_type: "DELETE",
       },
     ],
   },

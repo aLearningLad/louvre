@@ -1,6 +1,6 @@
 import { I_project_card, I_project_section } from "@/interfaces";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaRegEye } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 import { FcMoneyTransfer } from "react-icons/fc";
 import Image from "next/image";
@@ -213,12 +213,19 @@ const ProjectSection: React.FC<I_project_section> = ({
                 ({ id, img_setter_fxn, route_name, route_type }, index) => (
                   <button
                     key={id}
-                    className=" w-full h-10 bg-slate-600/30 flex justify-center gap-2 items-center"
+                    className=" w-full group hover:scale-95 transition-all duration-300 ease-in-out hover:bg-slate-600/70 rounded-lg cursor-pointer relative h-12 bg-slate-600/30 flex justify-center gap-2 items-center"
                   >
+                    <FaRegEye
+                      size={18}
+                      className=" absolute right-2 hidden group-hover:flex "
+                    />
                     <h3
-                      className={` text-[14px] ${
+                      className={` text-[14px] absolute left-2 ${
                         route_type === "POST" && "text-pink-400"
-                      } font-semibold `}
+                      }
+                        ${route_type === "GET" && "text-green-500"}
+                        ${route_type === "DELETE" && "text-orange-500"}
+                        font-semibold `}
                     >
                       {route_type}
                     </h3>
