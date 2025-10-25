@@ -34,6 +34,7 @@ const ProjectSection: React.FC<I_project_section> = ({
   category1,
   category2,
   next_project_name,
+  route_demos,
 }) => {
   if (is_type === enums.FLS) {
     return (
@@ -207,7 +208,25 @@ const ProjectSection: React.FC<I_project_section> = ({
           {/* dyanmic part here to show excalidraw images */}
           <div className=" w-full h-full border-2 border-white flex">
             {/* side bar to pick route */}
-            <div className=" w-4/12 h-full border-2 border-orange-400 flex flex-col"></div>
+            <div className=" w-4/12 h-full border-2 border-orange-400 justify-around flex flex-col px-2">
+              {route_demos?.map(
+                ({ id, img_setter_fxn, route_name, route_type }, index) => (
+                  <button
+                    key={id}
+                    className=" w-full h-10 bg-slate-600/30 flex justify-center gap-2 items-center"
+                  >
+                    <h3
+                      className={` text-[14px] ${
+                        route_type === "POST" && "text-pink-400"
+                      } font-semibold `}
+                    >
+                      {route_type}
+                    </h3>
+                    <p className=" text-[12px] italic">{route_name}</p>
+                  </button>
+                )
+              )}
+            </div>
 
             {/* route image shown here */}
             <div className=" w-8/12 h-full flex justify-center items-center px-12 py-4 rounded-lg bg-slate-600"></div>
@@ -217,11 +236,11 @@ const ProjectSection: React.FC<I_project_section> = ({
         {/* tech stack */}
         <div className=" w-full h-[15%] hidden lg:flex flex-col px-12 items-center mt-2 gap-1">
           <p className="text-[10px]">Technologies I used</p>
-          <div className="flex items-center justify-around w-full">
+          {/* <div className="flex items-center justify-around w-full">
             {all_tech.map((tab) => (
               <>{tab}</>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     );

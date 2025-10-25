@@ -66,7 +66,6 @@ export const project_data: T_individual_project[] = [
   },
   {
     is_type: enums.API,
-
     id: "eventstream",
     img1: "",
     img2: "",
@@ -98,43 +97,51 @@ export const project_data: T_individual_project[] = [
     ],
     next_project_link: "#",
     next_project_name: "RoadWalks API",
-  },
-  {
-    is_type: enums.API,
-    id: "roadworks",
-    img1: "",
-    img2: "",
-    img3: "",
-    subtitle_icon: <BsServer size={14} />,
-    video_url: "",
-    title: "RoadWork Club API",
-    subtitle: "Running Routes for Kraaifontein Clubs",
-    category1: enums.API, // create enum --> 'full stack', 'frontend', 'API'
-    par1: `A super-simple, structured .NET API built for Kraaifontein running clubs, boxers, and soccer players
-      `,
-    par2: `It surfaces rich route data with stopovers, landmarks, & average durations for each route.
-      Every route includes suggestions for branching offshoots to dynamically extend
-       runs through alternative terrain & scenery.`,
-    par3: `Routes are available all users, but only
-      registered users can add route data.
-      Additionally, users can only edit a route they created`, // ----> add this to Github README instead
-    lesson_par1: `I developed a solid grasp of navigational properties inside C# classes.
-  `,
-    lesson_par2: `I learned how to implement the repository pattern, and the importance of separating Domain Models from Data Transfer Objects,
-      along with increasing my confidence in using LINQ for queries
-  `,
-    github_url: "https://github.com/aLearningLad/RoadWorkClub",
-    live_link: "#",
-    tech_upper: [
-      <DotnetTab key={111} />,
-      <MSSQLTab key={222} />,
-
-      <JWTTab key={444} />,
+    route_demos: [
+      {
+        id: 1282,
+        route_name: "/api/v1/create-event",
+        img_setter_fxn: () => {},
+        route_type: "POST",
+      },
     ],
-    tech_lower: [<SeesharpTab key={333} />],
-    next_project_link: "#",
-    next_project_name: "hiatus",
   },
+  // {
+  //   is_type: enums.API,
+  //   id: "roadworks",
+  //   img1: "",
+  //   img2: "",
+  //   img3: "",
+  //   subtitle_icon: <BsServer size={14} />,
+  //   video_url: "",
+  //   title: "RoadWork Club API",
+  //   subtitle: "Running Routes for Kraaifontein Clubs",
+  //   category1: enums.API, // create enum --> 'full stack', 'frontend', 'API'
+  //   par1: `A super-simple, structured .NET API built for Kraaifontein running clubs, boxers, and soccer players
+  //     `,
+  //   par2: `It surfaces rich route data with stopovers, landmarks, & average durations for each route.
+  //     Every route includes suggestions for branching offshoots to dynamically extend
+  //      runs through alternative terrain & scenery.`,
+  //   par3: `Routes are available all users, but only
+  //     registered users can add route data.
+  //     Additionally, users can only edit a route they created`, // ----> add this to Github README instead
+  //   lesson_par1: `I developed a solid grasp of navigational properties inside C# classes.
+  // `,
+  //   lesson_par2: `I learned how to implement the repository pattern, and the importance of separating Domain Models from Data Transfer Objects,
+  //     along with increasing my confidence in using LINQ for queries
+  // `,
+  //   github_url: "https://github.com/aLearningLad/RoadWorkClub",
+  //   live_link: "#",
+  //   tech_upper: [
+  //     <DotnetTab key={111} />,
+  //     <MSSQLTab key={222} />,
+
+  //     <JWTTab key={444} />,
+  //   ],
+  //   tech_lower: [<SeesharpTab key={333} />],
+  //   next_project_link: "#",
+  //   next_project_name: "hiatus",
+  // },
   //   {
   //     id: "codeRume",
   //     img1: "",

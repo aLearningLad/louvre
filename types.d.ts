@@ -48,4 +48,12 @@ declare type T_individual_project = {
   subtitle_icon?: React.ReactElement;
   id: string;
   next_project_name?: string;
+  route_demos?: T_route_demo[];
+};
+
+declare type T_route_demo = {
+  id: number;
+  route_name: string; // --> /api/v1/... etc
+  route_type: string; // ---> GET, POST, UPDATE, DELETE
+  img_setter_fxn: (route_name: string) => void; // ---> use zustand
 };

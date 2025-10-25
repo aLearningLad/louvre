@@ -30,6 +30,8 @@ const ProjectsPage = () => {
           category1,
           category2,
           next_project_name,
+          architecture_urls,
+          route_demos,
         }) => (
           <ProjectSection
             is_type={is_type}
@@ -56,6 +58,8 @@ const ProjectsPage = () => {
             subtitle_icon={subtitle_icon}
             id={id}
             next_project_name={next_project_name}
+            architecture_urls={architecture_urls}
+            route_demos={route_demos}
           />
         )
       )}

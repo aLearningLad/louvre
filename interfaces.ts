@@ -74,4 +74,5 @@ export interface I_project_section {
   next_project_link?: string;
   id: string;
   next_project_name?: string;
+  route_demos?: T_route_demo[];
 }
