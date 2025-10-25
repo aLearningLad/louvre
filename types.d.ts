@@ -24,10 +24,12 @@ declare type T_tech_card = {
 };
 
 declare type T_individual_project = {
-  img1: string;
-  img2: string;
-  img3: string;
-  video_url: string;
+  is_type: string; // ---> either full stack, clientside, api or mobile from enum
+  img1?: string;
+  img2?: string;
+  img3?: string;
+  architecture_urls?: string[]; // ---> only for API route examples
+  video_url?: string;
   title: string;
   subtitle: string;
   category1: string; // create enum --> 'full stack', 'frontend', 'API'

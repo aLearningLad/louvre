@@ -25,6 +25,7 @@ import JWTTab from "@/components/projects/project_showcases/stack_tabs/jwt_tab";
 
 export const project_data: T_individual_project[] = [
   {
+    is_type: enums.FLS,
     id: "platamigos",
     img1: "",
     img2: "",
@@ -64,6 +65,8 @@ export const project_data: T_individual_project[] = [
     next_project_name: "EventStream API",
   },
   {
+    is_type: enums.API,
+
     id: "eventstream",
     img1: "",
     img2: "",
@@ -97,6 +100,7 @@ export const project_data: T_individual_project[] = [
     next_project_name: "RoadWalks API",
   },
   {
+    is_type: enums.API,
     id: "roadworks",
     img1: "",
     img2: "",

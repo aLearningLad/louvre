@@ -7,6 +7,7 @@ const ProjectsPage = () => {
     <div className=" w-full h-screen overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 gap-20 md:gap-12 lg:gap-0 flex flex-col">
       {project_data.map(
         ({
+          is_type,
           github_url,
           id,
           img1,
@@ -31,6 +32,7 @@ const ProjectsPage = () => {
           next_project_name,
         }) => (
           <ProjectSection
+            is_type={is_type}
             category1={category1}
             category2={category2}
             github_url={github_url}

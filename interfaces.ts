@@ -50,11 +50,13 @@ export interface I_project_card {
 }
 
 export interface I_project_section {
-  img1: string;
-  img2: string;
-  img3: string;
-  video_url: string;
+  is_type: string;
+  img1?: string;
+  img2?: string;
+  img3?: string;
+  video_url?: string;
   title: string;
+  architecture_urls?: string[]; // ---> only for API route examples
   subtitle: string;
   subtitle_icon?: React.ReactElement;
   category1: string; // create enum --> 'full stack', 'frontend', 'API'
