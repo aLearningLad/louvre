@@ -32,9 +32,9 @@ const AboutLeft = () => {
           >
             <i>latest project</i>
           </Link>{" "}
-          explores distributed API architectures and multi-database designs, all
-          made to sing via Kafka producers, a Docker container and Kafka
-          consumer flows.
+          explores distributed API architectures and multi-database designs,
+          linked via Kafka producers-to-consumer flows, a Docker container and
+          various middlewares.
           <br />
           <br />I enjoy tackling frontend code too — neatly stitching it to a
           type-safe, server-function-based backend, as shown{" "}

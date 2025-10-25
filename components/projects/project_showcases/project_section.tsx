@@ -161,7 +161,50 @@ const ProjectSection: React.FC<I_project_section> = ({
   }
 
   if (is_type === enums.API) {
-    return <div>Ahhhoooooi, bruv! And API here!</div>;
+    return (
+      <section
+        id={id}
+        className="p-3 h-fit relative snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      >
+        <Link
+          className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
+          href={"/"}
+        >
+          <AiFillHome
+            size={24}
+            className=" text-white group-hover:text-black "
+          />
+        </Link>
+
+        {/* project name and info */}
+        <div className=" w-full h-[25%] border-2 flex-col border-white flex justify-center items-center px-1 md:px-3 lg:px-20 text-center  ">
+          <span className="  flex items-center gap-3 md:gap-2 lg:gap-1 ">
+            <i className=" text-4xl md:text-2xl lg:text-[14px]">{title}</i>
+            {category2 && (
+              <p className=" text-[14px] lg:text-[6px] w-fit h-fit px-1 py-1 bg-pink-600 rounded-[4px] ">
+                {category2}
+              </p>
+            )}
+            <p className=" text-[14px] lg:text-[6px] w-fit h-fit px-1 py-1 bg-teal-600 rounded-[4px] ">
+              {category1}
+            </p>
+          </span>
+          <h4 className=" text-xl lg:text-[12px] flex gap-[2px]">
+            {subtitle} {subtitle_icon}
+          </h4>
+          <button className=" w-full sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-5 h-12 mt-3 lg:h-8 bg-white text-black text-[14px] lg:text-[12px]">
+            {/* this opens modal with full details --> description, lessons and all from project data */}
+            More
+          </button>
+        </div>
+
+        {/* demo routes with dynamic diagrams */}
+        <div className=" w-full h-[60%] bg-slate-800"></div>
+
+        {/* tech stack */}
+        <div className=" w-full h-[15%]"></div>
+      </section>
+    );
   }
 };
 
