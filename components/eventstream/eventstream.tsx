@@ -55,7 +55,11 @@ const EventStream = () => {
             {/* new project */}
             <button
               onClick={(e) => set_current_img("new-project")}
-              className="group h-10 flex justify-center items-center rounded-lg w-full bg-slate-500/30 hover:scale-95 transition-all duration-300 hover:bg-slate-500/60 cursor-pointer relative"
+              className={`group h-10 flex  justify-center items-center rounded-lg w-full ${
+                current_img === "new-project"
+                  ? " bg-neutral-200 scale-90 text-black"
+                  : "bg-slate-500/30 hover:bg-slate-500/60 hover:scale-95 transition-all duration-300"
+              }   cursor-pointer relative`}
             >
               <p className=" text-pink-400 text-[14px] font-semibold absolute left-2 ">
                 POST
@@ -69,7 +73,11 @@ const EventStream = () => {
             {/* get event */}
             <button
               onClick={(e) => set_current_img("get-event")}
-              className="group h-10 flex justify-center items-center rounded-lg w-full bg-slate-500/30 hover:scale-95 transition-all duration-300 hover:bg-slate-500/60 cursor-pointer relative"
+              className={`group h-10 flex justify-center items-center rounded-lg w-full ${
+                current_img === "get-event"
+                  ? " bg-neutral-200 scale-90 text-black"
+                  : "bg-slate-500/30 hover:bg-slate-500/60 hover:scale-95 transition-all duration-300"
+              }   cursor-pointer relative`}
             >
               <p className=" text-green-400 text-[14px] font-semibold absolute left-2 ">
                 GET
@@ -83,7 +91,11 @@ const EventStream = () => {
             {/* waiting list */}
             <button
               onClick={(e) => set_current_img("waiting-list")}
-              className="group h-10 flex justify-center items-center rounded-lg w-full bg-slate-500/30 hover:scale-95 transition-all duration-300 hover:bg-slate-500/60 cursor-pointer relative"
+              className={`group h-10 flex justify-center items-center rounded-lg w-full  ${
+                current_img === "waiting-list"
+                  ? " bg-neutral-200 scale-90 text-black"
+                  : "bg-slate-500/30 hover:bg-slate-500/60 hover:scale-95 transition-all duration-300"
+              } cursor-pointer relative`}
             >
               <p className=" text-orange-400 text-[14px] font-semibold absolute left-2 ">
                 POST
@@ -99,7 +111,11 @@ const EventStream = () => {
             {/* delete */}
             <button
               onClick={(e) => set_current_img("delete")}
-              className="group h-10 flex justify-center items-center rounded-lg w-full bg-slate-500/30 hover:scale-95 transition-all duration-300 hover:bg-slate-500/60 cursor-pointer relative"
+              className={`group h-10 flex justify-center items-center rounded-lg w-full  ${
+                current_img === "delete"
+                  ? " bg-neutral-200 scale-90 text-black"
+                  : "bg-slate-500/30 hover:bg-slate-500/60 hover:scale-95 transition-all duration-300"
+              } cursor-pointer relative`}
             >
               <p className=" text-cyan-400 text-[14px] font-semibold absolute left-2 ">
                 DELETE
@@ -113,20 +129,47 @@ const EventStream = () => {
           </div>
 
           {/* route image shown here */}
-          <div className=" w-7/12 h-full flex justify-center items-center px-12 py-4 rounded-lg bg-neutral-200">
+          <div className=" w-7/12 h-full flex justify-center items-center px-12 py-4 rounded-lg">
             {current_img === "new-project" && (
               <div className=" w-full h-full relative">
                 <Image
                   width={620}
                   height={720}
-                  src={"/assets/new_project.png"}
+                  src={"/assets/npwhite2.png"}
                   alt="new project route architecture"
                 />
               </div>
             )}
-            {current_img === "get-event" && "get event diagram"}
-            {current_img === "waiting-list" && "waiting list diagram"}
-            {current_img === "delete" && "delete diagram"}
+            {current_img === "get-event" && (
+              <div className=" w-full h-full relative">
+                <Image
+                  width={620}
+                  height={720}
+                  src={"/assets/ge.png"}
+                  alt="fetch specific event route architecture"
+                />
+              </div>
+            )}
+            {current_img === "waiting-list" && (
+              <div className=" w-full h-full relative">
+                <Image
+                  width={620}
+                  height={720}
+                  src={"/assets/wl.png"}
+                  alt="new project route architecture"
+                />
+              </div>
+            )}
+            {current_img === "delete" && (
+              <div className=" w-full h-full relative">
+                <Image
+                  width={620}
+                  height={720}
+                  src={"/assets/del.png"}
+                  alt="delet user account route architecture"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
