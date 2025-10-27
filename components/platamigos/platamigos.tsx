@@ -12,6 +12,7 @@ import TypescriptTab from "../projects/project_showcases/stack_tabs/typescript_t
 import TailwindTab from "../projects/project_showcases/stack_tabs/tailwind_tab";
 import NextjsTab from "../projects/project_showcases/stack_tabs/nextjs_tab";
 import GSAPTab from "../projects/project_showcases/stack_tabs/gsap_tab";
+import Image from "next/image";
 
 const tech_upper = [
   <SQLTab key={1} />,
@@ -24,6 +25,8 @@ const tech_lower = [
   <NextjsTab key={5} />,
   <GSAPTab key={7} />,
 ];
+
+const blocks = [1, 2, 3, 4];
 
 const Platamigos = () => {
   return (
@@ -39,20 +42,15 @@ const Platamigos = () => {
       </Link>
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
-        {/* left side images --> ONLY ON LARGE SCREENS */}
-        <div className=" hidden space-y-4 lg:flex w-3/12 h-full flex-col items-end ">
-          <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg">
-            image1
-          </div>
-          <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg">
-            image2image3
-          </div>
-          <div className=" w-full h-1/3 bg-neutral-100/20 rounded-lg"></div>
-        </div>
-
         {/* middle video demo on large screens only */}
-        <div className=" w-full hidden lg:flex sm:w-10/12 md:w-8/12 w:h-7/12 bg-neutral-100/10 rounded-lg">
-          video loop
+        <div className=" relative w-full h-full gap-4 items-center justify-center hidden lg:flex lg:flex-wrap sm:w-10/12 md:w-8/12 w:h-7/12 rounded-lg">
+          <Image
+            src={"/assets/landing.png"}
+            fill
+            alt="image"
+            className=" absolute rounded-lg overflow-clip"
+            objectFit="contain"
+          />
         </div>
 
         {/* right side info / bottom on mobile  */}
@@ -130,19 +128,6 @@ const Platamigos = () => {
           ))}
         </div>
       </div>
-      {/* cta to scroll down ONLY ON LARGE SCREENS */}
-      {/* {next_project_link && (
-        <div className=" w-full gap-2 hidden lg:flex h-[10%] justify-center items-center  ">
-          <FaAngleDoubleDown className=" text-pink-600" size={10} />
-
-          <Link href={next_project_link}>
-            <i className=" text-pink-600 underline text-[10px]">
-              {next_project_name}
-            </i>
-          </Link>
-          <FaAngleDoubleDown className=" text-pink-600" size={10} />
-        </div>
-      )}{" "} */}
     </section>
   );
 };
