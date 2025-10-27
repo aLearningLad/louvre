@@ -1,4 +1,5 @@
 import EventStream from "@/components/eventstream/eventstream";
+import Platamigos from "@/components/platamigos/platamigos";
 import ProjectSection from "@/components/projects/project_showcases/project_section";
 import { project_data } from "@/dev_data/project_data";
 import React from "react";
@@ -6,7 +7,7 @@ import React from "react";
 const ProjectsPage = () => {
   return (
     <div className=" w-full h-screen overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 gap-20 md:gap-12 lg:gap-0 flex flex-col">
-      {project_data.map(
+      {/* {project_data.map(
         ({
           is_type,
           github_url,
@@ -63,7 +64,8 @@ const ProjectsPage = () => {
             route_demos={route_demos}
           />
         )
-      )}
+      )} */}
+      <Platamigos />
       <EventStream />
     </div>
   );
