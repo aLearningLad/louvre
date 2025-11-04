@@ -17,7 +17,7 @@ const TechBtn = () => {
         !is_tech ? "flex" : "hidden"
       } justify-between items-center hover:pl-5 hover:border-none h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 `}
     >
-      <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
+      <p className=" text-[14px] flex items-center gap-2 group-hover:text-[18px] transition-all duration-300 ease-in-out ">
         Tech stack
         <FaCubesStacked
           size={16}

@@ -11,18 +11,18 @@ const Navbar = () => {
       <div className=" hidden lg:flex w-5/12 h-full justify-around ">
         <span className=" flex-8/12 flex justify-around items-center h-full ">
           <a key={1} href="#about">
-            <p className=" text-[10px] ">ABOUT</p>
+            <p className=" text-[12px] ">ABOUT</p>
           </a>
           {nav_links.map(({ href, id, title }, index) => (
             <Link key={id} href={href}>
-              <p className=" text-[10px] ">{title}</p>
+              <p className=" text-[12px] ">{title}</p>
             </Link>
           ))}
         </span>
 
         <span className=" flex-4/12 h-full flex justify-center items-center">
           <Link href={"https://github.com/aLearningLad/louvre"} target="_blank">
-            <FaGithub size={20} />
+            <FaGithub size={22} />
           </Link>
         </span>
       </div>

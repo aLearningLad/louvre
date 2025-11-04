@@ -10,7 +10,7 @@ const AboutLeft = () => {
   return (
     <div className=" w-full h-[80vh] lg:h-full lg:w-1/2 flex-col items-start justify-around ">
       <div className=" flex flex-col">
-        <h3 className=" text-[20px] ">About me</h3>
+        <h3 className=" text-[24px] ">About me</h3>
 
         {/* <h2 className=" text-[14px] ">
           Software developer focused on building clean, scalable systems.
@@ -20,7 +20,7 @@ const AboutLeft = () => {
           Always exploring new technologies and improving workflows to deliver
           production-ready systems.
         </h2> */}
-        <h2 className=" text-[12px] w-10/12 ">
+        <h2 className=" text-[14px] w-10/12 ">
           I focus on building clean, scalable systems.
           <br />
           <br />
@@ -33,7 +33,7 @@ const AboutLeft = () => {
             <i>latest project</i>
           </Link>{" "}
           explores distributed API architectures and multi-database designs,
-          linked via Kafka producers-to-consumer flows, a Docker container and
+          linked via Kafka producer-to-consumer flows, a Docker container and
           various middlewares.
           <br />
           <br />I enjoy tackling frontend code too — neatly stitching it to a
@@ -49,7 +49,7 @@ const AboutLeft = () => {
       </div>
 
       <div className=" flex flex-col items-start mt-12">
-        <div className=" flex flex-col w-full h-fit gap-1">
+        <div className=" flex flex-col w-full h-fit gap-5">
           <ContactBtn />
           <Link
             href={
@@ -58,7 +58,7 @@ const AboutLeft = () => {
             target="_blank"
             className=" w-7/12  cursor-pointer group flex justify-between items-center hover:pl-5 hover:border-none h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
           >
-            <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
+            <p className=" text-[14px] flex items-center gap-2 group-hover:text-[18px] transition-all duration-300 ease-in-out ">
               Browse my Github{" "}
               <FaGithub
                 size={16}
@@ -74,7 +74,7 @@ const AboutLeft = () => {
             href={"/projects"}
             className=" w-7/12  cursor-pointer group flex justify-between items-center hover:pl-5 hover:border-none h-12 hover:bg-neutral-200/10 hover:rounded-lg border-b-[1px] border-neutral-300 "
           >
-            <p className=" text-[10px] flex items-center gap-2 group-hover:text-[14px] transition-all duration-300 ease-in-out ">
+            <p className=" text-[14px] flex items-center gap-2 group-hover:text-[18px] transition-all duration-300 ease-in-out ">
               My projects
               <GiGears
                 size={16}
