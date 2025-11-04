@@ -15,8 +15,8 @@ const ContactForm = () => {
       {/* full name -> mandatory */}
       <div className=" w-full h-fit flex flex-col items-start text-start">
         <label className=" flex gap-[1px] items-center" htmlFor="full_name">
-          <p className=" text-[6px]">FULL NAME</p>
-          <p className=" text-sm text-red-600">*</p>
+          <p className=" text-[12px]">FULL NAME</p>
+          <p className=" text-[20px] text-red-600">*</p>
         </label>
         <input
           name="full_name"
@@ -33,8 +33,8 @@ const ContactForm = () => {
       {/* company -> optional */}
       <div className=" w-full h-fit flex flex-col items-start text-start">
         <label className=" flex gap-[1px] items-center" htmlFor="company">
-          <p className=" text-[6px]">COMPANY NAME</p>
-          <p className=" text-sm text-red-600">*</p>
+          <p className=" text-[12px]">COMPANY NAME</p>
+          <p className=" text-[20px] text-red-600">*</p>
         </label>
         <input
           name="company"
@@ -51,8 +51,8 @@ const ContactForm = () => {
       {/* email -> mandatory */}
       <div className=" w-full h-fit flex flex-col items-start text-start">
         <label className=" flex gap-[1px] items-center" htmlFor="email">
-          <p className=" text-[6px]">EMAIL</p>
-          <p className=" text-sm text-red-600">*</p>
+          <p className=" text-[12px]">EMAIL</p>
+          <p className=" text-[20px] text-red-600">*</p>
         </label>
         <input
           name="email"
@@ -69,8 +69,8 @@ const ContactForm = () => {
       {/* body -> mandatory */}
       <div className=" w-full h-fit flex flex-col items-start text-start">
         <label className=" flex gap-[1px] items-center" htmlFor="full_name">
-          <p className=" text-[6px]">{"LET'S"} BUILD</p>
-          <p className=" text-sm text-red-600">*</p>
+          <p className=" text-[12px]">{"LET'S"} BUILD</p>
+          <p className=" text-[20px] text-red-600">*</p>
         </label>
         <textarea
           name="full_name"
