@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 declare type T_nav_info = {
   id: number;
   title: string;
@@ -60,6 +62,6 @@ declare type T_route_demo = {
 
 declare type T_api_tech_list = {
   id: number;
-  img_url: string;
+  img_url: string | ReactElement;
   title: string;
 };

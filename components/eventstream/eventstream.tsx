@@ -1,12 +1,13 @@
 "use client";
 
 import { enums } from "@/enums";
+import { T_api_tech_list } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import React, { ChangeEvent, useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BsServer } from "react-icons/bs";
-import { FaGithub, FaRegEye } from "react-icons/fa";
+import { FaAws, FaGithub, FaRegEye } from "react-icons/fa";
 
 const EventStream = () => {
   const [current_img, set_current_img] = useState<string>("new-project");
@@ -19,7 +20,7 @@ const EventStream = () => {
     },
     {
       id: 22,
-      img_url: "/assets/aws.png",
+      img_url: <FaAws size={22} />,
       title: "AWS S3",
     },
     {
@@ -69,13 +70,18 @@ const EventStream = () => {
         <h4 className=" text-xl lg:text-[14px] flex gap-[2px]">
           A distributed festival management API <BsServer size={20} />
         </h4>
-        <div className=" h-20 w-full flex justify-center items-center gap-4 border-4 border-white">
+        <div className=" h-20 w-full flex justify-center items-center gap-4 ">
           {leftList.map(({ id, img_url, title }) => (
             <div
-              className=" w-20 h-20 flex flex-col items-center text-center"
+              className=" w-22 h-12 flex flex-col justify-center items-center text-center bg-pink-500/40 rounded-[8px] "
               key={id}
             >
-              <Image src={img_url} alt="tech image" width={18} height={18} />
+              {img_url && typeof img_url === "string" ? (
+                <Image src={img_url} alt="tech image" width={26} height={26} />
+              ) : (
+                <div>{img_url}</div>
+              )}
+              <p className=" text-[10px]">{title}</p>
             </div>
           ))}
 
@@ -87,7 +93,17 @@ const EventStream = () => {
             <FaGithub size={22} />
           </Link>
           {rightList.map(({ id, img_url, title }) => (
-            <div key={id}>bruv</div>
+            <div
+              className=" w-22 h-12 flex flex-col justify-center items-center text-center bg-pink-500/40 rounded-[8px] "
+              key={id}
+            >
+              {img_url && typeof img_url === "string" ? (
+                <Image src={img_url} alt="tech image" width={26} height={26} />
+              ) : (
+                <div>{img_url}</div>
+              )}
+              <p className=" text-[10px]">{title}</p>
+            </div>
           ))}
         </div>
       </div>
