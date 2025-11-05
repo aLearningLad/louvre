@@ -10,7 +10,7 @@ const SQLTab = () => {
         height={40}
         alt="PostgreSQL logo"
       />
-      <p className=" text-lg lg:text-[7px] text-black">postgreSQL</p>
+      <p className=" text-lg lg:text-[10px] text-black">postgreSQL</p>
     </div>
   );
 };

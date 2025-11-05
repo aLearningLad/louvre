@@ -10,7 +10,7 @@ const RedisTab = () => {
         height={50}
         alt="redis logo"
       />
-      <p className=" text-lg lg:text-[7px] text-black">Redis</p>
+      <p className=" text-lg lg:text-[10px] text-black">Redis</p>
     </div>
   );
 };

@@ -55,7 +55,7 @@ const Platamigos = () => {
 
         {/* right side info / bottom on mobile  */}
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
-          <span className="  flex items-center gap-3 md:gap-2">
+          <span className="  flex items-center gap-3 md:gap-2 lg:gap-4">
             <i className=" text-4xl md:text-2xl">Platamigos</i>
             <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-teal-600 rounded-[4px] ">
               {enums.FLS}
@@ -112,7 +112,7 @@ const Platamigos = () => {
       </div>
       {/* tech stack details */}
       <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-3 lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
-        <h3 className=" text-xl lg:text-[10px]">Technologies I Used</h3>
+        <h3 className=" text-xl lg:text-[14px]">Technologies I Used</h3>
 
         {/* 3 here */}
         <div className=" flex w-full items-center justify-center space-x-12 space-y-4 lg:space-y-1">

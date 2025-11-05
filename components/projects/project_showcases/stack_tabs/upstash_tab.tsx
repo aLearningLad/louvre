@@ -10,7 +10,7 @@ const Upstash_Tab = () => {
         height={40}
         alt="next.js logo"
       />
-      <p className=" text-lg lg:text-[7px] text-black">Upstash</p>
+      <p className=" text-lg lg:text-[10px] text-black">Upstash</p>
     </div>
   );
 };

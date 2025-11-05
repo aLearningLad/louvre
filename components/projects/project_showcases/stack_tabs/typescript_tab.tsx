@@ -10,7 +10,7 @@ const TypescriptTab = () => {
         height={40}
         alt="typescript logo"
       />
-      <p className=" text-lg lg:text-[7px] text-white">Typescript</p>
+      <p className=" text-lg lg:text-[10px] text-white">Typescript</p>
     </div>
   );
 };

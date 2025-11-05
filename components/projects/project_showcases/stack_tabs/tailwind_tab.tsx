@@ -10,7 +10,7 @@ const TailwindTab = () => {
         height={40}
         alt="tailwind css logo"
       />
-      <p className=" text-lg lg:text-[7px] text-white">Tailwind CSS</p>
+      <p className=" text-lg lg:text-[10px] text-white">Tailwind CSS</p>
     </div>
   );
 };
