@@ -38,7 +38,7 @@ const Platamigos = () => {
         className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
         href={"/"}
       >
-        <AiFillHome size={24} className=" text-white group-hover:text-black " />
+        <AiFillHome size={30} className=" text-white group-hover:text-black " />
       </Link>
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
@@ -55,17 +55,17 @@ const Platamigos = () => {
 
         {/* right side info / bottom on mobile  */}
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
-          <span className="  flex items-center gap-3 md:gap-2 lg:gap-1 ">
-            <i className=" text-4xl md:text-2xl lg:text-[14px]">Platamigos</i>
-            <p className=" text-[14px] lg:text-[6px] w-fit h-fit px-1 py-1 bg-teal-600 rounded-[4px] ">
+          <span className="  flex items-center gap-3 md:gap-2">
+            <i className=" text-4xl md:text-2xl">Platamigos</i>
+            <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-teal-600 rounded-[4px] ">
               {enums.FLS}
             </p>
           </span>
-          <h4 className=" text-xl lg:text-[12px] flex gap-[2px]">
-            A demo peer-lending platform <FcMoneyTransfer size={14} />
+          <h4 className=" text-xl lg:text-[14px] flex gap-[2px] mb-2">
+            A demo peer-lending platform <FcMoneyTransfer size={20} />
           </h4>
           <div>
-            <div className=" text-lg mt-5 lg:mt-0 lg:text-[10px] w-full md:w-11/12 lg:w-full">
+            <div className=" text-lg mt-5 lg:mt-0 lg:text-[12px] w-full md:w-11/12 lg:w-full">
               Users can request loans, compare offers, and choose which to
               accept.
               <br />
@@ -76,10 +76,10 @@ const Platamigos = () => {
               <br />
               <br />
               <div className=" w-full flex flex-col items-start gap-2">
-                <p className=" text-xl lg:text-[10px] font-semibold flex gap-[2px]">
-                  Main lesson <GiBrain size={12} color="pink" /> :
+                <p className=" text-xl lg:text-[12px] font-semibold flex gap-[2px]">
+                  Main lesson <GiBrain size={20} color="pink" /> :
                 </p>
-                <p className=" text-lg lg:text-[10px]">
+                <p className=" text-lg lg:text-[12px]">
                   Caching! What, when & how to cache. I used Redis & Upstash
                   during during auth and CRUD events: fetch and cache on sign in
                   and loan-related changes; clear on sign out. <br />
@@ -95,14 +95,14 @@ const Platamigos = () => {
               <Link
                 href={"https://github.com/aLearningLad/platamigos"}
                 target="_blank"
-                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-black transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-fit px-5 h-12 lg:h-6 rounded-[12px] lg:rounded-[4px] bg-neutral-100 "
+                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
               >
-                <FaGithub size={18} />
+                <FaGithub size={20} />
               </Link>
 
               <Link
                 href={"#"}
-                className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-5 h-12 lg:h-6 rounded-[10px] lg:rounded-[4px] bg-neutral-100 hover:bg-black hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
+                className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-1/6 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
                 Open
               </Link>
