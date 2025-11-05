@@ -9,7 +9,7 @@ const TechStack = () => {
 
   return (
     <div className=" w-full h-full flex flex-col justify-center items-center text-center ">
-      <h1>Technologies I Build With</h1>
+      <h1 className=" text-[20px]">Technologies I Build With</h1>
       <div className=" w-full  h-fit flex flex-col py-3 gap-6 ">
         {/* 5 items here */}
         <div className=" w-full h-fit flex items-center justify-center gap-12">
@@ -20,11 +20,11 @@ const TechStack = () => {
             >
               <Image
                 src={img_url}
-                width={30}
-                height={30}
+                width={40}
+                height={40}
                 alt="technology logo"
               />
-              <p className=" text-[8px]">{title}</p>
+              <p className=" text-[12px]">{title}</p>
             </div>
           ))}
         </div>
@@ -38,11 +38,11 @@ const TechStack = () => {
             >
               <Image
                 src={img_url}
-                width={25}
-                height={25}
+                width={35}
+                height={35}
                 alt="technology logo"
               />
-              <p className=" text-[6px]">{title}</p>
+              <p className=" text-[12px]">{title}</p>
             </div>
           ))}
         </div>
@@ -56,16 +56,16 @@ const TechStack = () => {
             >
               <Image
                 src={img_url}
-                width={20}
-                height={20}
+                width={28}
+                height={28}
                 alt="technology logo"
               />
-              <p className=" text-[6px]">{title}</p>
+              <p className=" text-[10px]">{title}</p>
             </div>
           ))}
         </div>
       </div>
-      <p className=" mt-5 text-[10px] w-8/12 text-center">
+      <p className=" mt-5 text-[14px] w-8/12 text-center">
         {"I've"} just recently begun working more deeply with <i>Python</i> on
         Kaggle. My broader aspirations lie in data engineering and cloud
         infrastructure, and {"I'm"} developing skills using {"Google's"}{" "}
@@ -80,7 +80,7 @@ const TechStack = () => {
 
       <Link
         href={"/projects"}
-        className=" mt-7 flex justify-center items-center w-fit cursor-pointer hover:bg-black hover:text-white hover:scale-95 transition-all duration-300 ease-in-out px-6 bg-white text-black rounded-[6px] h-8 text-[12px]"
+        className=" mt-7 flex justify-center items-center w-fit cursor-pointer hover:bg-black hover:text-white hover:scale-95 transition-all duration-300 ease-in-out px-6 bg-white text-black rounded-[6px] h-16 lg:h-12 text-[14px]"
       >
         View My Projects
       </Link>

@@ -22,7 +22,7 @@ const ContactForm = () => {
           name="full_name"
           type="text"
           placeholder="Eg. Tom Featherington"
-          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
+          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[14px] lg:text-[12px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
           value={full_name}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             set_full_name(e.target.value)
@@ -40,7 +40,7 @@ const ContactForm = () => {
           name="company"
           type="text"
           placeholder="Eg. Wayne Enterprises Inc."
-          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
+          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[14px] lg:text-[12px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
           value={company}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             set_company(e.target.value)
@@ -58,7 +58,7 @@ const ContactForm = () => {
           name="email"
           type="text"
           placeholder="Eg. masterwayne@batman.com"
-          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
+          className=" w-full focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[14px] lg:text-[12px] placeholder:text-neutral-300 h-10 rounded-[6px] bg-neutral-100/10 "
           value={email}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             set_email(e.target.value)
@@ -75,7 +75,7 @@ const ContactForm = () => {
         <textarea
           name="full_name"
           placeholder="Eg. Mate, I need you to build me a Netflix replica. But for kitten videos. Stay with me now . . ."
-          className=" w-full py-5 focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[8px] placeholder:text-neutral-300 h-full rounded-[6px] bg-neutral-100/10 "
+          className=" w-full py-5 focus:outline-none focus:scale-95 transition-all duration-300 ease-in-out px-3 text-[14px] lg:text-[12px] placeholder:text-neutral-300 h-full rounded-[6px] bg-neutral-100/10 "
           value={body}
           onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
             set_body(e.target.value)
@@ -89,22 +89,22 @@ const ContactForm = () => {
         >
           {is_consented && <TiTick color="white" size={10} />}
         </button>
-        <p className="text-[9px] w-9/12">
+        <p className="text-[10px] w-9/12">
           I consent to my information being used so Thato can respond to my
           message.
         </p>
         <button
-          className={`h-8 hover:scale-95 transition-all duration-300  cursor-pointer ${
+          className={`h-16 lg:h-10 hover:scale-95 transition-all duration-300  cursor-pointer ${
             is_consented
               ? "brightness-100 hover:bg-white hover:text-black"
               : "brightness-50"
-          } bg-pink-700 text-white text-[8px] w-3/12 rounded-[6px] flex justify-center items-center`}
+          } bg-pink-700 text-white text-[12px] w-3/12 rounded-[6px] flex justify-center items-center`}
         >
           Send Message
         </button>
       </div>
       <div className=" w-full flex justify-start h-fit">
-        <button className=" w-fit cursor-pointer h-8 rounded-[6px] bg-neutral-950/70 hover:scale-95 transition-all duration-300 ease-in-out px-7 text-[10px] fex justify-center items-center text-white hover:bg-black">
+        <button className=" w-fit cursor-pointer h-10 rounded-[6px] bg-neutral-950/70 hover:scale-95 transition-all duration-300 ease-in-out px-7 text-[14px] fex justify-center items-center text-white hover:bg-black">
           Cancel
         </button>
       </div>
