@@ -6,8 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { ChangeEvent, useState } from "react";
 import { AiFillHome } from "react-icons/ai";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { BsServer } from "react-icons/bs";
-import { FaAws, FaGithub, FaRegEye } from "react-icons/fa";
+import { FaAws, FaGithub, FaNode, FaRegEye } from "react-icons/fa";
+import { IoLogoDocker } from "react-icons/io5";
+import { MdEnhancedEncryption } from "react-icons/md";
 
 const EventStream = () => {
   const [current_img, set_current_img] = useState<string>("new-project");
@@ -31,20 +34,26 @@ const EventStream = () => {
   ];
   const rightList: T_api_tech_list[] = [
     {
+      id: 77,
+      img_url: <IoLogoDocker size={22} className=" text-neutral-200" />,
+      title: "Docker",
+    },
+    {
       id: 44,
-      img_url: "/assets/sql.png",
+      img_url: <BiLogoPostgresql size={26} className=" text-slate-200" />,
       title: "PostgreSQL",
     },
     {
       id: 55,
-      img_url: "/assets/nodejs.png",
-      title: "PostgreSQL",
+      img_url: <FaNode size={26} className=" text-green-600" />,
+      title: "Node.js",
     },
-    {
-      id: 66,
-      img_url: "/assets/bcrypt.png",
-      title: "Bcrypt",
-    },
+
+    // {
+    //   id: 66,
+    //   img_url: <MdEnhancedEncryption size={22} className=" text-orange-300" />,
+    //   title: "Bcrypt",
+    // },
   ];
   return (
     <section
@@ -73,7 +82,7 @@ const EventStream = () => {
         <div className=" h-20 w-full flex justify-center items-center gap-4 ">
           {leftList.map(({ id, img_url, title }) => (
             <div
-              className=" w-22 h-12 flex flex-col justify-center items-center text-center bg-pink-500/40 rounded-[8px] "
+              className=" w-22 h-12 flex flex-col hover:scale-95 transition-all duration-200 ease-in-out cursor-pointer justify-center items-center text-center bg-pink-500/40 rounded-[8px] "
               key={id}
             >
               {img_url && typeof img_url === "string" ? (
