@@ -3,48 +3,15 @@
 import { enums } from "@/enums";
 import Image from "next/image";
 import Link from "next/link";
-import React, { ChangeEvent, useState } from "react";
+import React, { useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BsServer } from "react-icons/bs";
-import { FaGithub, FaRegEye } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa6";
 
-const EventStream = () => {
+const RoadWalks = () => {
   const [current_img, set_current_img] = useState<string>("new-project");
 
-  const leftList: T_api_tech_list[] = [
-    {
-      id: 11,
-      img_url: "/assets/mongo.png",
-      title: "MongoDB",
-    },
-    {
-      id: 22,
-      img_url: "/assets/aws.png",
-      title: "AWS S3",
-    },
-    {
-      id: 33,
-      img_url: "/assets/kafka.png",
-      title: "Apache Kafka",
-    },
-  ];
-  const rightList: T_api_tech_list[] = [
-    {
-      id: 44,
-      img_url: "/assets/sql.png",
-      title: "PostgreSQL",
-    },
-    {
-      id: 55,
-      img_url: "/assets/nodejs.png",
-      title: "PostgreSQL",
-    },
-    {
-      id: 66,
-      img_url: "/assets/bcrypt.png",
-      title: "Bcrypt",
-    },
-  ];
   return (
     <section
       id={"28787811"}
@@ -60,36 +27,23 @@ const EventStream = () => {
       {/* project name and info */}
       <div className=" w-full h-[25%] flex-col flex justify-center items-center px-1 md:px-3 lg:px-20 text-center  ">
         <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 mb-2">
-          <i className=" text-4xl md:text-2xl">EventStream API</i>
+          <i className=" text-4xl md:text-2xl">RoadWalks API</i>
 
           <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-pink-600 rounded-[4px] ">
             {enums.API}
           </p>
         </span>
         <h4 className=" text-xl lg:text-[14px] flex gap-[2px]">
-          A distributed festival management API <BsServer size={20} />
+          A super-simple, structured .NET API built for Kraaifontein running
+          clubs <BsServer size={20} />
         </h4>
-        <div className=" h-20 w-full flex justify-center items-center gap-4 border-4 border-white">
-          {leftList.map(({ id, img_url, title }) => (
-            <div
-              className=" w-20 h-20 flex flex-col items-center text-center"
-              key={id}
-            >
-              <Image src={img_url} alt="tech image" width={18} height={18} />
-            </div>
-          ))}
-
-          <Link
-            href={"https://github.com/aLearningLad/eventstream"}
-            target="_blank"
-            className=" w-full flex items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-12 mt-3 lg:h-10 bg-white text-black text-[14px] lg:text-[14px]"
-          >
-            <FaGithub size={22} />
-          </Link>
-          {rightList.map(({ id, img_url, title }) => (
-            <div key={id}>bruv</div>
-          ))}
-        </div>
+        <Link
+          href={"https://github.com/aLearningLad/RoadWalks"}
+          target="_blank"
+          className=" w-full flex items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-12 mt-3 lg:h-10 bg-white text-black text-[14px] lg:text-[14px]"
+        >
+          <FaGithub size={22} />
+        </Link>
       </div>
 
       {/* demo routes with dynamic diagrams */}
@@ -226,4 +180,4 @@ const EventStream = () => {
   );
 };
 
-export default EventStream;
+export default RoadWalks;

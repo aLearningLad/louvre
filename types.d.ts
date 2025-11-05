@@ -57,3 +57,9 @@ declare type T_route_demo = {
   route_type: string; // ---> GET, POST, UPDATE, DELETE
   img_setter_fxn: (route_name: string) => void; // ---> use zustand
 };
+
+declare type T_api_tech_list = {
+  id: number;
+  img_url: string;
+  title: string;
+};
