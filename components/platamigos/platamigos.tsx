@@ -13,12 +13,14 @@ import TailwindTab from "../projects/project_showcases/stack_tabs/tailwind_tab";
 import NextjsTab from "../projects/project_showcases/stack_tabs/nextjs_tab";
 import GSAPTab from "../projects/project_showcases/stack_tabs/gsap_tab";
 import Image from "next/image";
+import ZustandTab from "../projects/project_showcases/stack_tabs/zustand_tab";
 
 const tech_upper = [
   <SQLTab key={1} />,
   <Upstash_Tab key={6} />,
   <RedisTab key={2} />,
   <TypescriptTab key={3} />,
+  <ZustandTab key={7} />,
 ];
 const tech_lower = [
   <TailwindTab key={4} />,
@@ -43,9 +45,9 @@ const Platamigos = () => {
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
         {/* middle video demo on large screens only */}
-        <div className=" w-full h-full gap-4 items-center justify-center hidden lg:flex lg:flex-wrap sm:w-10/12 md:w-8/12 w:h-7/12 rounded-lg">
+        <div className=" w-full h-fit overflow-hidden items-center justify-center hidden lg:flex sm:w-10/12 md:w-8/12 w:h-7/12 rounded-lg">
           <video
-            className=" w-full h-full rounded-lg"
+            className=" w-full h-full object-cover "
             loop
             muted
             autoPlay
