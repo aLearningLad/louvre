@@ -43,13 +43,13 @@ const Platamigos = () => {
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
         {/* middle video demo on large screens only */}
-        <div className=" relative w-full h-full gap-4 items-center justify-center hidden lg:flex lg:flex-wrap sm:w-10/12 md:w-8/12 w:h-7/12 rounded-lg">
-          <Image
-            src={"/assets/landing.png"}
-            fill
-            alt="image"
-            className=" absolute rounded-lg overflow-clip"
-            objectFit="contain"
+        <div className=" w-full h-full gap-4 items-center justify-center hidden lg:flex lg:flex-wrap sm:w-10/12 md:w-8/12 w:h-7/12 rounded-lg">
+          <video
+            className=" w-full h-full rounded-lg"
+            loop
+            muted
+            autoPlay
+            src="/videos/platamigos_demo.mp4"
           />
         </div>
 
@@ -101,7 +101,8 @@ const Platamigos = () => {
               </Link>
 
               <Link
-                href={"#"}
+                href={"https://platamigos.vercel.app/"}
+                target="_blank"
                 className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-1/6 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
                 Open

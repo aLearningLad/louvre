@@ -4,13 +4,12 @@ import { enums } from "@/enums";
 import { T_api_tech_list } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import React, { ChangeEvent, useState } from "react";
+import React, { useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsServer } from "react-icons/bs";
 import { FaAws, FaGithub, FaNode, FaRegEye } from "react-icons/fa";
 import { IoLogoDocker } from "react-icons/io5";
-import { MdEnhancedEncryption } from "react-icons/md";
 
 const EventStream = () => {
   const [current_img, set_current_img] = useState<string>("new-project");
@@ -48,12 +47,6 @@ const EventStream = () => {
       img_url: <FaNode size={26} className=" text-green-600" />,
       title: "Node.js",
     },
-
-    // {
-    //   id: 66,
-    //   img_url: <MdEnhancedEncryption size={22} className=" text-orange-300" />,
-    //   title: "Bcrypt",
-    // },
   ];
   return (
     <section

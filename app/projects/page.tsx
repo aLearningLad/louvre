@@ -2,6 +2,7 @@ import EventStream from "@/components/eventstream/eventstream";
 import Platamigos from "@/components/platamigos/platamigos";
 import ProjectSection from "@/components/projects/project_showcases/project_section";
 import RoadWalks from "@/components/roadwalks/roadwalks";
+import TwitterVerse from "@/components/twitterverse/twitterverse";
 import { project_data } from "@/dev_data/project_data";
 import React from "react";
 
@@ -69,6 +70,7 @@ const ProjectsPage = () => {
       <Platamigos />
       <EventStream />
       <RoadWalks />
+      <TwitterVerse />
     </div>
   );
 };
