@@ -38,7 +38,7 @@ const Tesla = () => {
             loop
             muted
             autoPlay
-            src="/videos/twitterverse_demo.mp4"
+            src="/videos/tesla_demo_720.mp4"
           />
         </div>
 
@@ -75,7 +75,7 @@ const Tesla = () => {
             </div>
             <div className=" w-full h-full flex justify-center lg:justify-start items-center gap-6 lg:gap-3 mt-5">
               <Link
-                href={"https://tesla-light.vercel.app/"}
+                href={"https://github.com/aLearningLad/tesla"}
                 target="_blank"
                 className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
               >
@@ -83,7 +83,7 @@ const Tesla = () => {
               </Link>
 
               <Link
-                href={"https://github.com/aLearningLad/tesla"}
+                href={"https://tesla-light.vercel.app/"}
                 target="_blank"
                 className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-1/6 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
