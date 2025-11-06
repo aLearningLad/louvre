@@ -2,20 +2,20 @@ import React from "react";
 import TypescriptTab from "../projects/project_showcases/stack_tabs/typescript_tab";
 import TailwindTab from "../projects/project_showcases/stack_tabs/tailwind_tab";
 import NextjsTab from "../projects/project_showcases/stack_tabs/nextjs_tab";
+import ZustandTab from "../projects/project_showcases/stack_tabs/zustand_tab";
 import Link from "next/link";
 import { AiFillHome } from "react-icons/ai";
-import { enums } from "@/enums";
 import { FcMoneyTransfer } from "react-icons/fc";
 import { GiBrain } from "react-icons/gi";
-import { FaGithub, FaTwitter } from "react-icons/fa";
-import ZustandTab from "../projects/project_showcases/stack_tabs/zustand_tab";
+import { FaGithub } from "react-icons/fa";
+import { enums } from "@/enums";
+import { SiTesla } from "react-icons/si";
 
-const TwitterVerse = () => {
+const Tesla = () => {
   const tech_upper = [
     <TypescriptTab key={3} />,
-    <TailwindTab key={4} />,
-    <NextjsTab key={5} />,
     <ZustandTab key={6} />,
+    <TailwindTab key={4} />,
   ];
 
   return (
@@ -45,26 +45,20 @@ const TwitterVerse = () => {
         {/* right side info / bottom on mobile  */}
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
           <span className="  flex items-center gap-3 md:gap-2 lg:gap-4">
-            <i className=" text-4xl md:text-2xl">TwitterVerse</i>
-            <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-purple-600 rounded-[4px] ">
+            <i className=" text-4xl md:text-2xl">Tesla</i>
+            <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-orange-500 rounded-[4px] ">
               {enums.FRN}
             </p>
           </span>
           <h4 className=" text-xl lg:text-[14px] flex gap-[2px] mb-2">
-            A simplified Twitter frontend clone <FaTwitter size={20} />
+            Tesla frontend clone <SiTesla size={20} />
           </h4>
           <div>
             <div className=" text-lg mt-5 lg:mt-0 lg:text-[12px] w-full md:w-11/12 lg:w-full">
-              This was a hobby project. I tried to mimic {"Twitter's"} UI and
-              basic functionality such as tweeting, viewing community tweets,
-              news sections, applying for premium membership; and storing,
-              altering and using state across different components to manipulate
-              the UI.
+              A clone of {"Tesla's"} web page. It uses images from the Tesla
+              site at the time, and the design follows the {"site's"}.
               <br />
               <br />
-              It is a bare-bones build. No APIs nor external data are used, and
-              it is without Auth nor backend. All media are held within the
-              assets folder: everything is self-contained within this repo.
               <br />
               <br />
               <div className=" w-full flex flex-col items-start gap-2">
@@ -72,17 +66,16 @@ const TwitterVerse = () => {
                   Main lesson <GiBrain size={20} color="pink" /> :
                 </p>
                 <p className=" text-lg lg:text-[12px]">
-                  This app taught me to use Zustand. <br />
-                  Declaring, manipulating and using state to conditionally
-                  render UI across components that {"don't"} share a parent.
-                  This was also a very useful excercise to help me move away
-                  from mindlessly drilling state down
+                  This was a great excercise in translating UI features into
+                  code. I also expanded on previous Zustand knowledge to render
+                  images, text and colors based on state shared between
+                  components not on the same DOM branch
                 </p>
               </div>
             </div>
             <div className=" w-full h-full flex justify-center lg:justify-start items-center gap-6 lg:gap-3 mt-5">
               <Link
-                href={"https://github.com/aLearningLad/twitterverse"}
+                href={"https://tesla-light.vercel.app/"}
                 target="_blank"
                 className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
               >
@@ -90,7 +83,7 @@ const TwitterVerse = () => {
               </Link>
 
               <Link
-                href={"https://twitterverse-six.vercel.app/"}
+                href={"https://github.com/aLearningLad/tesla"}
                 target="_blank"
                 className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-1/6 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
@@ -115,4 +108,4 @@ const TwitterVerse = () => {
   );
 };
 
-export default TwitterVerse;
+export default Tesla;
