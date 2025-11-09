@@ -17,7 +17,7 @@ const Bubble: React.FC<I_bubble> = ({
 }) => {
   return (
     <div
-      className={` absolute text-center flex-col w-[160px] h-[160px] rounded-full flex justify-center items-center `}
+      className={` absolute text-center flex-col w-[160px] h-[160px] rounded-full hidden lg:flex justify-center items-center `}
       style={{
         top,
         right,

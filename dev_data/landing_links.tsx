@@ -1,3 +1,4 @@
+import { T_landing_links } from "@/types";
 import { FaGithub } from "react-icons/fa";
 import { GiGears } from "react-icons/gi";
 

@@ -8,20 +8,12 @@ import TechBtn from "./tech_btn";
 
 const AboutLeft = () => {
   return (
-    <div className=" w-full h-[80vh] lg:h-full lg:w-1/2 flex-col items-start justify-around ">
-      <div className=" flex flex-col">
-        <h3 className=" text-[24px] ">About me</h3>
+    <div className=" w-full h-[80vh] lg:h-full lg:w-1/2 flex-col items-start justify-start lg:justify-around ">
+      <div className=" flex flex-col lg:items-start items-center">
+        <h3 className=" text-[26px] lg:text-[24px] ">About me</h3>
 
-        {/* <h2 className=" text-[14px] ">
-          Software developer focused on building clean, scalable systems.
-          Experienced in full-stack and backend development, including
-          distributed architectures and multi-database solutions. Passionate
-          about solving real-world problems with efficient, maintainable code.
-          Always exploring new technologies and improving workflows to deliver
-          production-ready systems.
-        </h2> */}
-        <h2 className=" text-[14px] w-10/12 ">
-          I focus on building clean, scalable systems.
+        <h2 className=" text-[22px] text-center lg:text-start lg:text-[14px] w-10/12 ">
+          I learn continuously, tinker & build
           <br />
           <br />
           My{" "}
@@ -48,7 +40,7 @@ const AboutLeft = () => {
         </h2>
       </div>
 
-      <div className=" flex flex-col items-start mt-12">
+      <div className=" hidden lg:flex flex-col items-start mt-12">
         <div className=" flex flex-col w-full h-fit gap-5">
           <ContactBtn />
           <Link

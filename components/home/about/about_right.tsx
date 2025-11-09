@@ -12,7 +12,7 @@ const AboutRight = () => {
   const is_tech: boolean = useStore((store: I_store) => store.is_tech);
 
   return (
-    <div className="w-full lg:w-1/2 h-[70vh] lg:h-full flex flex-col items-center justify-center ">
+    <div className="w-full lg:w-1/2 lg:flex hidden lg:h-full flex-col items-center justify-center ">
       {currently && <AboutBubbles />}
       {is_form && <ContactForm />}
       {is_tech && <TechStack />}
