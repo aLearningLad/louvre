@@ -88,18 +88,28 @@ const TwitterVerse = () => {
               </div>
             </div>
             <div className=" w-full mt-12 lg:mt-3 flex justify-center lg:flex-row flex-col lg:justify-start items-center gap-6 lg:gap-3">
+              {/* for web */}
               <Link
                 href={"https://github.com/aLearningLad/twitterverse"}
                 target="_blank"
-                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95  flex items-center justify-center w-10/12 sm:w-8/12 md:w-6/12 lg:w-fit lg:px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
+                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95 hidden lg:flex items-center justify-center w-10/12 sm:w-8/12 md:w-6/12 lg:w-fit lg:px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
               >
                 <FaGithub size={20} />
+              </Link>
+
+              {/* for mobile */}
+              <Link
+                href={"https://github.com/aLearningLad/twitterverse"}
+                target="_blank"
+                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95 lg:hidden flex items-center justify-center w-10/12 sm:w-8/12 md:w-6/12 lg:w-fit lg:px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
+              >
+                <FaGithub size={40} />
               </Link>
 
               <Link
                 href={"https://twitterverse-six.vercel.app/"}
                 target="_blank"
-                className=" text-lg lg:text-[12px] flex items-center justify-center w-10/12 sm:w-8/12 md:w-6/12 lg:w-fit lg:px-12 h-16 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
+                className=" text-[22px] lg:text-[12px] flex items-center justify-center w-10/12 sm:w-8/12 md:w-6/12 lg:w-fit lg:px-12 h-16 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
                 Open
               </Link>
