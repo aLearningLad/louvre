@@ -51,10 +51,10 @@ const EventStream = () => {
   return (
     <section
       id={"28787811"}
-      className="p-3 h-fit relative snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 min-h-screen relative snap-start rounded-xl bg-pink-600/20 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
     >
       <Link
-        className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
+        className=" absolute group left-5 top-5 lg:left-3 lg:top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
         href={"/"}
       >
         <AiFillHome size={30} className=" text-white group-hover:text-black " />
@@ -65,14 +65,14 @@ const EventStream = () => {
         <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 mb-2">
           <i className=" text-4xl md:text-2xl">EventStream API</i>
 
-          <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-pink-600 rounded-[4px] ">
+          <p className=" text-[14px] lg:text-[10px] lg:flex hidden w-fit h-fit px-3 py-1 bg-pink-600 rounded-[4px] ">
             {enums.API}
           </p>
         </span>
         <h4 className=" text-xl lg:text-[14px] flex gap-[2px]">
           A distributed festival management API <BsServer size={20} />
         </h4>
-        <div className=" h-20 w-full flex justify-center items-center gap-4 ">
+        <div className=" h-20 w-full hidden lg:flex justify-center items-center gap-4 ">
           {leftList.map(({ id, img_url, title }) => (
             <div
               className=" w-22 h-12 flex flex-col hover:scale-95 transition-all duration-200 ease-in-out cursor-pointer justify-center items-center text-center bg-pink-500/40 rounded-[8px] "
@@ -110,8 +110,34 @@ const EventStream = () => {
         </div>
       </div>
 
+      {/* info for mobile */}
+
+      <div className=" w-full flex flex-col">
+        <h2 className=" text-[22px] text-center mb-3">
+          A distributed festival management backend built with Express.js,
+          Kafka, PostgreSQL, MongoDB, and AWS S3.
+        </h2>
+
+        <h4 className=" text-[22px] text-center ">
+          Handles authentication, ticket sales, metadata storage, and image
+          uploads — designed for scalability and clarity. It implements rate
+          limiting and logging.
+        </h4>
+      </div>
+
+      {/* links for mobile */}
+      <div className=" w-full flex flex-col gap-5 lg:hidden">
+        <Link
+          href={"https://github.com/aLearningLad/eventstream"}
+          target="_blank"
+          className=" w-full flex items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-20 mt-3 lg:h-10 bg-white text-black text-[14px] lg:text-[14px]"
+        >
+          <FaGithub className=" text-4xl lg:text-2xl " />
+        </Link>
+      </div>
+
       {/* demo routes with dynamic diagrams */}
-      <div className=" w-11/12 h-[60%] bg-slate-800/50 rounded-2xl p-5 flex flex-col items-center ">
+      <div className=" w-11/12 h-[60%] bg-slate-800/50 rounded-2xl p-5 hidden lg:flex flex-col items-center ">
         <h3 className=" text-[14px] mb-4">
           Route Architecture Examples - See GitHub for full documentation{" "}
         </h3>
