@@ -9,7 +9,7 @@ import React from "react";
 
 const ProjectsPage = () => {
   return (
-    <div className=" w-full h-screen overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 gap-20 md:gap-12 lg:gap-0 flex flex-col">
+    <div className=" w-full h-screen overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 flex flex-col">
       <Platamigos />
       <EventStream />
       <RoadWalks />

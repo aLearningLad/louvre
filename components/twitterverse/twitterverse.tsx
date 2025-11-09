@@ -21,7 +21,7 @@ const TwitterVerse = () => {
   return (
     <section
       id={"platamigos"}
-      className="p-3 min-h-screen relative snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 min-h-screen relative snap-start rounded-xl bg-orange-500/20 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
     >
       <Link
         className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
@@ -43,8 +43,8 @@ const TwitterVerse = () => {
         </div>
 
         {/* right side info / bottom on mobile  */}
-        <div className=" w-full border-4 border-white lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start flex">
-          <span className="  flex items-center gap-3 md:gap-2 lg:gap-4">
+        <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start flex">
+          <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 mb-2">
             <i className=" text-4xl md:text-2xl">TwitterVerse</i>
             <p className=" text-[14px] hidden lg:flex lg:text-[10px] w-fit h-fit px-3 py-1 bg-purple-600 rounded-[4px] ">
               {enums.FRN}
