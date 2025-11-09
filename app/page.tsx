@@ -18,6 +18,7 @@ export default function Home() {
       <About />
 
       <Bubble
+        id="typescript"
         right="12%"
         top="20%"
         height="150px"
@@ -28,6 +29,7 @@ export default function Home() {
         font_size={10}
       />
       <Bubble
+        id="flutter"
         right="16%"
         top="10%"
         height="120px"
@@ -39,17 +41,19 @@ export default function Home() {
       />
 
       <Bubble
+        id="dotnet"
         right="-2%"
         top="3%"
         height="220px"
         width="220px"
         skill="C# & .NET"
-        backgroundColor="rgba(225, 237, 235, 0.24)"
+        backgroundColor="rgba(225, 237, 235, 0.2)"
         icon={<SiDotnet color="white" size={50} />}
         font_size={12}
       />
 
       <Bubble
+        id="postgresql"
         right="19%"
         top="31%"
         height="140px"
@@ -61,6 +65,7 @@ export default function Home() {
       />
 
       <Bubble
+        id="node"
         right="0%"
         top="31%"
         height="230px"
@@ -71,6 +76,7 @@ export default function Home() {
         font_size={10}
       />
       <Bubble
+        id="nextjs"
         right="18%"
         top="44%"
         height="130px"

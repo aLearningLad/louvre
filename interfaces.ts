@@ -1,4 +1,7 @@
+import { T_route_demo, T_tech_card, T_tech_tab_info } from "./types";
+
 export interface I_bubble {
+  id: string;
   top: string;
   right: string;
   width: string | number;

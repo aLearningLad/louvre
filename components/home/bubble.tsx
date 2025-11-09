@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const Bubble: React.FC<I_bubble> = ({
+  id,
   right,
   top,
   height,
@@ -17,7 +18,11 @@ const Bubble: React.FC<I_bubble> = ({
 }) => {
   return (
     <div
-      className={` absolute text-center flex-col w-[160px] h-[160px] rounded-full hidden lg:flex justify-center items-center `}
+      className={` absolute ${id === "dotnet" && "dotnet"}  ${
+        id === "typescript" && "ts"
+      } text-center ${
+        id !== "dotnet" && id !== "typescript" && "otherbubbles"
+      } flex-col w-[160px] h-[160px] rounded-full hidden lg:flex justify-center items-center `}
       style={{
         top,
         right,
