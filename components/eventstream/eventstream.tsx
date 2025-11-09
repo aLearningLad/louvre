@@ -112,7 +112,7 @@ const EventStream = () => {
 
       {/* info for mobile */}
 
-      <div className=" w-full flex flex-col">
+      <div className=" w-full flex lg:hidden flex-col">
         <h2 className=" text-[22px] text-center mb-3">
           A distributed festival management backend built with Express.js,
           Kafka, PostgreSQL, MongoDB, and AWS S3.

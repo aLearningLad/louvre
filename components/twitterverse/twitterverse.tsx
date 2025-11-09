@@ -21,7 +21,7 @@ const TwitterVerse = () => {
   return (
     <section
       id={"platamigos"}
-      className="p-3 h-fit relative snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 min-h-screen relative snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
     >
       <Link
         className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
@@ -43,10 +43,10 @@ const TwitterVerse = () => {
         </div>
 
         {/* right side info / bottom on mobile  */}
-        <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
+        <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start flex">
           <span className="  flex items-center gap-3 md:gap-2 lg:gap-4">
             <i className=" text-4xl md:text-2xl">TwitterVerse</i>
-            <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-purple-600 rounded-[4px] ">
+            <p className=" text-[14px] hidden lg:flex lg:text-[10px] w-fit h-fit px-3 py-1 bg-purple-600 rounded-[4px] ">
               {enums.FRN}
             </p>
           </span>
@@ -54,7 +54,14 @@ const TwitterVerse = () => {
             A simplified Twitter frontend clone <FaTwitter size={20} />
           </h4>
           <div>
-            <div className=" text-lg mt-5 lg:mt-0 lg:text-[12px] w-full md:w-11/12 lg:w-full">
+            <div className=" w-full text-[18px]">
+              This was a hobby project. I tried to mimic {"Twitter's"} UI and
+              basic functionality such as tweeting, viewing community tweets,
+              news sections, applying for premium membership; and storing,
+              altering and using state across different components to manipulate
+              the UI.
+            </div>
+            <div className=" lg:block hidden text-lg mt-5 lg:mt-0 lg:text-[12px] w-full md:w-11/12 lg:w-full">
               This was a hobby project. I tried to mimic {"Twitter's"} UI and
               basic functionality such as tweeting, viewing community tweets,
               news sections, applying for premium membership; and storing,
@@ -92,7 +99,7 @@ const TwitterVerse = () => {
               <Link
                 href={"https://twitterverse-six.vercel.app/"}
                 target="_blank"
-                className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-1/6 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
+                className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
                 Open
               </Link>
@@ -101,7 +108,7 @@ const TwitterVerse = () => {
         </div>
       </div>
       {/* tech stack details */}
-      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-3 lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
+      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-3 lg:h-[25%] justify-center gap-y-2 hidden lg:flex flex-col items-center ">
         <h3 className=" text-xl lg:text-[14px]">Technologies I Used</h3>
 
         {/* 3 here */}
