@@ -34,10 +34,10 @@ const Platamigos = () => {
   return (
     <section
       id={"platamigos"}
-      className="p-3 h-fit relative snap-start rounded-xl bg-neutral-100/10 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      className="lg:p-3 min-h-screen bg-cyan-600/10 relative snap-start rounded-xl lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
     >
       <Link
-        className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
+        className=" absolute group flex top-5 left-5 lg:left-3 lg:top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
         href={"/"}
       >
         <AiFillHome size={30} className=" text-white group-hover:text-black " />
@@ -57,13 +57,13 @@ const Platamigos = () => {
 
         {/* right side info / bottom on mobile  */}
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
-          <span className="  flex items-center gap-3 md:gap-2 lg:gap-4">
+          <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 justify-center lg:justify-start">
             <i className=" text-4xl md:text-2xl">Platamigos</i>
-            <p className=" text-[14px] lg:text-[10px] w-fit h-fit px-3 py-1 bg-teal-600 rounded-[4px] ">
+            <p className=" text-[14px] lg:text-[10px] lg:flex hidden w-fit h-fit px-3 py-1 bg-teal-600 rounded-[4px] ">
               {enums.FLS}
             </p>
           </span>
-          <h4 className=" text-xl lg:text-[14px] flex gap-[2px] mb-2">
+          <h4 className=" text-xl lg:text-[14px] flex gap-[2px] mb-2 justify-center lg:justify-start">
             A demo peer-lending platform <FcMoneyTransfer size={20} />
           </h4>
           <div>
@@ -77,7 +77,7 @@ const Platamigos = () => {
               calculated and shown
               <br />
               <br />
-              <div className=" w-full flex flex-col items-start gap-2">
+              <div className=" w-full flex flex-col items-center lg:items-start gap-2">
                 <p className=" text-xl lg:text-[12px] font-semibold flex gap-[2px]">
                   Main lesson <GiBrain size={20} color="pink" /> :
                 </p>
@@ -105,7 +105,7 @@ const Platamigos = () => {
               <Link
                 href={"https://platamigos.vercel.app/"}
                 target="_blank"
-                className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-1/6 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
+                className=" text-lg lg:text-[12px] flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
                 Open
               </Link>
@@ -114,7 +114,7 @@ const Platamigos = () => {
         </div>
       </div>
       {/* tech stack details */}
-      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-3 lg:h-[25%] justify-center gap-y-2 flex flex-col items-center ">
+      <div className=" w-full h-[30%] mt-12 sm:mt-10 md:mt-7 lg:mt-3 lg:h-[25%] justify-center gap-y-2 hidden lg:flex flex-col items-center ">
         <h3 className=" text-xl lg:text-[14px]">Technologies I Used</h3>
 
         {/* 3 here */}

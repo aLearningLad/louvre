@@ -5,12 +5,12 @@ const AboutBubbles = () => {
   return (
     <div className=" w-full h-full relative flex justify-center items-center">
       <div className=" h-full lg:h-[65%] w-full sm:w-10/12 md:w-8/12 lg:w-10/12 flex flex-col items-center lg:items-start justify-center">
-        <h2 className=" text-3xl ">What {"I'm"} currently up to</h2>
+        <h2 className=" text-2xl ">What {"I'm"} currently up to</h2>
         <h3 className=" text-[16px]">
-          {"I'm"} finishing a .NET API named <i>Road Work Club</i>
+          I am finishing <i>Road Work Club</i>
         </h3>
         <p className="text-[14px] w-8/12">
-          {"It's"} a super-simple, structured .NET API built for Kraaifontein
+          It is a tiny & simply structured .NET API built for Kraaifontein
           running clubs.
           <br />
           <br />
