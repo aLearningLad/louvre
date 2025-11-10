@@ -192,3 +192,8 @@ body {
     transform: scale(1);
   }
 }
+
+.stack,
+.hello {
+  visibility: hidden;
+}
