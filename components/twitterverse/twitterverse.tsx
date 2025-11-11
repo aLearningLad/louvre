@@ -21,14 +21,8 @@ const TwitterVerse = () => {
   return (
     <section
       id={"platamigos"}
-      className="p-3 min-h-screen relative snap-start rounded-xl bg-orange-500/20 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 min-h-screen relative snap-start rounded-xl bg-orange-500/20 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col z-[2]"
     >
-      <Link
-        className=" absolute group left-3 top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
-        href={"/"}
-      >
-        <AiFillHome size={30} className=" text-white group-hover:text-black " />
-      </Link>
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-[70%] lg:h-[65%]">
         {/* middle video demo on large screens only */}

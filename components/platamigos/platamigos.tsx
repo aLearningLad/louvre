@@ -34,14 +34,8 @@ const Platamigos = () => {
   return (
     <section
       id={"platamigos"}
-      className="lg:p-3 min-h-screen bg-cyan-600/10 relative snap-start rounded-xl lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col py-5"
+      className="lg:p-3 z-[2] min-h-screen bg-cyan-600/10 relative snap-start rounded-xl lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col py-5"
     >
-      <Link
-        className=" absolute group flex top-5 left-5 lg:left-3 lg:top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
-        href={"/"}
-      >
-        <AiFillHome size={30} className=" text-white group-hover:text-black " />
-      </Link>
       {/* project info */}
       <div className=" w-full gap-3 lg:w-8/12 flex flex-col lg:flex-row h-full justify-center lg:h-[65%]">
         {/* middle video demo on large screens only */}

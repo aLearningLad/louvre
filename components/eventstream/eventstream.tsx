@@ -51,15 +51,8 @@ const EventStream = () => {
   return (
     <section
       id={"28787811"}
-      className="p-3 min-h-screen relative snap-start rounded-xl bg-pink-600/20 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col"
+      className="p-3 min-h-screen relative snap-start rounded-xl bg-pink-600/20 lg:bg-transparent lg:min-h-screen w-full flex justify-center items-center flex-col z-[2]"
     >
-      <Link
-        className=" absolute group left-5 top-5 lg:left-3 lg:top-2 hover:bg-white transition-all duration-300 ease-in-out rounded-[6px]"
-        href={"/"}
-      >
-        <AiFillHome size={30} className=" text-white group-hover:text-black " />
-      </Link>
-
       {/* project name and info */}
       <div className=" w-full h-[25%] flex-col flex justify-center items-center px-1 md:px-3 lg:px-20 text-center  ">
         <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 mb-2">

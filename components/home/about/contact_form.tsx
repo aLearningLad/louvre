@@ -1,5 +1,6 @@
 "use client";
 
+import { sendMail } from "@/services/send_mail";
 import { ChangeEvent, useState } from "react";
 import { TiTick } from "react-icons/ti";
 
@@ -94,6 +95,7 @@ const ContactForm = () => {
           message.
         </p>
         <button
+          onClick={sendMail}
           className={`h-16 lg:h-10 hover:scale-95 transition-all duration-300  cursor-pointer ${
             is_consented
               ? "brightness-100 hover:bg-white hover:text-black"
