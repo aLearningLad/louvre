@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import React, { ChangeEvent, useState } from "react";
 import { TiTick } from "react-icons/ti";
 import lottieLoading from "@/public/assets/emailLottie.json";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
   const [full_name, set_full_name] = useState<string>("");
@@ -15,33 +16,35 @@ const ContactForm = () => {
 
   const handleSend = async (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    set_is_loading(true);
-    try {
-      const res = await fetch("/api/mail", {
-        method: "POST",
-        body: JSON.stringify({
-          email,
-          full_name,
-          company,
-          body,
-        }),
-      });
+    // set_is_loading(true);
+    // try {
+    //   const res = await fetch("/api/mail", {
+    //     method: "POST",
+    //     body: JSON.stringify({
+    //       email,
+    //       full_name,
+    //       company,
+    //       body,
+    //     }),
+    //   });
 
-      if (res.status === 400) {
-        alert("Unable to send email");
-      }
-      set_is_loading(false);
+    //   if (res.status === 400) {
+    //     toast.error("Unable to send email. Please try again");
+    //   }
+    //   set_is_loading(false);
 
-      alert("Email sent");
-    } catch (error) {
-      console.error("Unable to send email: ", error);
-      set_is_loading(false);
-    } finally {
-      set_email("");
-      set_full_name("");
-      set_body("");
-      set_company("");
-    }
+    //   toast.success("Email sent");
+    // } catch (error) {
+    //   console.error("Unable to send email: ", error);
+    //   set_is_loading(false);
+    // } finally {
+    //   set_email("");
+    //   set_full_name("");
+    //   set_body("");
+    //   set_company("");
+    // }
+
+    toast.error("Bruuuv");
   };
 
   if (!is_loading) {

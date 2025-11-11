@@ -12,9 +12,22 @@ export const sendMail = async (
     const info = await transporter.sendMail({
       from: email,
       to: process.env.GMAIL_APP_EMAIL,
-      subject: "Hello ✔",
+      subject: "Project Enquiry",
       text: `${full_name} from ${company_name} has sent you an email, bruv`, // plain‑text body
-      html: `<b>${full_name} has sent you an email, bruv</b>`, // HTML body
+      html: `
+      <div>
+      <h3>Email recieved from ${full_name}, of the company called ${company_name}</h3>
+
+      <br/>
+      <br/>
+
+      <p>
+      ${message}
+      </p>
+      
+      </div>
+      
+      `, // HTML body
     });
 
     if (info.accepted) {
