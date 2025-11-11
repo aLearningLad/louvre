@@ -1,7 +1,6 @@
 "use client";
 
-import { sendMail } from "@/services/send_mail";
-import { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { TiTick } from "react-icons/ti";
 
 const ContactForm = () => {
@@ -10,6 +9,9 @@ const ContactForm = () => {
   const [email, set_email] = useState<string>("");
   const [body, set_body] = useState<string>("");
   const [is_consented, set_is_consented] = useState<boolean>(false);
+  const [is_loading, set_is_loading] = useState<boolean>(false);
+
+  const handleSend = async () => {};
 
   return (
     <form className=" w-full px-2 lg:w-10/12 h-[85%] items-center lg:items-start justify-around flex flex-col">
@@ -95,7 +97,7 @@ const ContactForm = () => {
           message.
         </p>
         <button
-          onClick={sendMail}
+          onClick={handleSend}
           className={`h-16 lg:h-10 hover:scale-95 transition-all duration-300  cursor-pointer ${
             is_consented
               ? "brightness-100 hover:bg-white hover:text-black"
