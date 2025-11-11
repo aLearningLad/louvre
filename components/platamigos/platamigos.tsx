@@ -47,11 +47,11 @@ const Platamigos = () => {
         {/* middle video demo on large screens only */}
         <div className=" w-full h-fit overflow-hidden items-center justify-center hidden lg:flex sm:w-10/12 md:w-8/12 w:h-7/12 rounded-lg">
           <video
-            className=" w-full h-full object-cover "
+            className=" w-full h-full object-cover rounded-2xl "
             loop
             muted
             autoPlay
-            src="/videos/platamigos_demo.mp4"
+            src="/videos/platamigos_demo_3.mp4"
           />
         </div>
 
@@ -97,7 +97,7 @@ const Platamigos = () => {
               <Link
                 href={"https://github.com/aLearningLad/platamigos"}
                 target="_blank"
-                className=" text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95 hidden  lg:flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
+                className="github text-lg lg:text-[12px] text-black hover:text-white cursor-pointer hover:bg-cyan-500 transition-all duration-300 ease-in-out hover:scale-95 hidden  lg:flex items-center justify-center w-fit px-12 h-16 lg:h-10 rounded-[12px] lg:rounded-[6px] bg-neutral-100 "
               >
                 <FaGithub size={20} />
               </Link>
@@ -112,7 +112,7 @@ const Platamigos = () => {
               <Link
                 href={"https://platamigos.vercel.app/"}
                 target="_blank"
-                className=" text-[22px] lg:text-[12px] flex items-center justify-center w-11/12 lg:w-fit px-12 h-20 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
+                className="open text-[22px] lg:text-[12px] flex items-center justify-center w-11/12 lg:w-fit px-12 h-20 lg:h-10 rounded-[10px] lg:rounded-[6px] bg-neutral-100 hover:bg-pink-400 hover:text-white text-black transition-all duration-300 ease-in-out cursor-pointer hover:scale-95 "
               >
                 Open
               </Link>

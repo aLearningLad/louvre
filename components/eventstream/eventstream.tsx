@@ -90,7 +90,7 @@ const EventStream = () => {
           <Link
             href={"https://github.com/aLearningLad/eventstream"}
             target="_blank"
-            className=" w-full flex items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-12 mt-3 lg:h-10 bg-white text-black text-[14px] lg:text-[14px]"
+            className="github w-full flex items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-12 mt-3 lg:h-10 bg-white text-black text-[14px] lg:text-[14px]"
           >
             <FaGithub size={22} />
           </Link>

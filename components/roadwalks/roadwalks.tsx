@@ -112,7 +112,7 @@ const RoadWalks = () => {
       <Link
         href={"https://github.com/aLearningLad/eventstream"}
         target="_blank"
-        className=" w-full flex lg:hidden items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-20 mt-3 bg-white text-black"
+        className="github w-full flex lg:hidden items-center justify-center hover:scale-95 transition-all duration-300 ease-in-out hover:bg-transparent border-2 border-white hover:text-white cursor-pointer sm:w-10/12 md:w-8/12 rounded-[6px] lg:w-fit lg:px-12 h-20 mt-3 bg-white text-black"
       >
         <FaGithub className=" text-4xl lg:text-2xl mt-5 " />
       </Link>
