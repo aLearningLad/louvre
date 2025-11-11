@@ -16,35 +16,54 @@ const ContactForm = () => {
 
   const handleSend = async (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    // set_is_loading(true);
-    // try {
-    //   const res = await fetch("/api/mail", {
-    //     method: "POST",
-    //     body: JSON.stringify({
-    //       email,
-    //       full_name,
-    //       company,
-    //       body,
-    //     }),
-    //   });
 
-    //   if (res.status === 400) {
-    //     toast.error("Unable to send email. Please try again");
-    //   }
-    //   set_is_loading(false);
+    if (full_name.length < 3) {
+      toast.error("Please provide your name");
+      return;
+    }
 
-    //   toast.success("Email sent");
-    // } catch (error) {
-    //   console.error("Unable to send email: ", error);
-    //   set_is_loading(false);
-    // } finally {
-    //   set_email("");
-    //   set_full_name("");
-    //   set_body("");
-    //   set_company("");
-    // }
+    if (email.length < 5 || !email.includes("@")) {
+      toast.error("Please provide a valid email address");
+      return;
+    }
 
-    toast.error("Bruuuv");
+    if (company.length < 3) {
+      toast.error("Please provide a company name.");
+      return;
+    }
+
+    if (body.length < 10) {
+      toast.error("Please provide more detail in your email");
+      return;
+    }
+
+    set_is_loading(true);
+    try {
+      const res = await fetch("/api/mail", {
+        method: "POST",
+        body: JSON.stringify({
+          email,
+          full_name,
+          company,
+          body,
+        }),
+      });
+
+      if (res.status === 400) {
+        toast.error("Unable to send email. Please try again");
+      }
+      set_is_loading(false);
+
+      toast.success("Email sent");
+    } catch (error) {
+      console.error("Unable to send email: ", error);
+      set_is_loading(false);
+    } finally {
+      set_email("");
+      set_full_name("");
+      set_body("");
+      set_company("");
+    }
   };
 
   if (!is_loading) {
