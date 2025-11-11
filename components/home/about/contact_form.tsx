@@ -11,7 +11,27 @@ const ContactForm = () => {
   const [is_consented, set_is_consented] = useState<boolean>(false);
   const [is_loading, set_is_loading] = useState<boolean>(false);
 
-  const handleSend = async () => {};
+  const handleSend = async () => {
+    try {
+      const res = await fetch("/api/mail", {
+        method: "POST",
+        body: JSON.stringify({
+          email,
+          full_name,
+          company,
+          body,
+        }),
+      });
+
+      if (res.status === 400) {
+        alert("Unable to send email");
+      }
+
+      alert("Email sent");
+    } catch (error) {
+      console.error("Unable to send email: ", error);
+    }
+  };
 
   return (
     <form className=" w-full px-2 lg:w-10/12 h-[85%] items-center lg:items-start justify-around flex flex-col">
@@ -87,6 +107,7 @@ const ContactForm = () => {
       </div>
       <div className=" w-full h-14 flex items-start gap-3">
         <button
+          type="button"
           onClick={() => set_is_consented((prev) => !prev)}
           className=" w-[12px] h-[12px] rounded-[2px] flex justify-center items-center bg-pink-700 "
         >
@@ -97,6 +118,7 @@ const ContactForm = () => {
           message.
         </p>
         <button
+          disabled={!is_consented}
           onClick={handleSend}
           className={`h-16 lg:h-10 hover:scale-95 transition-all duration-300  cursor-pointer ${
             is_consented
