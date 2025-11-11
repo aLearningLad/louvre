@@ -9,12 +9,15 @@ import React from "react";
 
 const ProjectsPage = () => {
   return (
-    <div className=" w-full h-screen overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 flex flex-col">
+    <div className=" relative w-full h-screen bg-gradient-to-br from-black via-slate-900 to-black overflow-y-scroll snap-y snap-mandatory p-3 lg:p-0 flex flex-col">
       <Platamigos />
       <EventStream />
       <RoadWalks />
       <TwitterVerse />
       <Tesla />
+
+      {/* bubbles */}
+      <div className="projects_bubble absolute w-[200px] h-[200px] rounded-full bg-gradient-to-tr from-pink-600/40 via-pink-600/20 to-transparent " />
     </div>
   );
 };

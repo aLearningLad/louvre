@@ -65,7 +65,7 @@ const EventStream = () => {
         <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 mb-2">
           <i className=" text-4xl md:text-2xl">EventStream API</i>
 
-          <p className=" text-[14px] lg:text-[10px] lg:flex hidden w-fit h-fit px-3 py-1 bg-pink-600 rounded-[4px] ">
+          <p className="open text-[14px] lg:text-[10px] lg:flex hidden w-fit h-fit px-3 py-1 bg-pink-600 rounded-[4px] ">
             {enums.API}
           </p>
         </span>

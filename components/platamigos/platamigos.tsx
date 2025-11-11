@@ -59,7 +59,7 @@ const Platamigos = () => {
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start">
           <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 justify-center lg:justify-start">
             <i className=" text-4xl md:text-2xl">Platamigos</i>
-            <p className=" text-[14px] lg:text-[10px] lg:flex hidden w-fit h-fit px-3 py-1 bg-teal-600 rounded-[4px] ">
+            <p className="open text-[14px] lg:text-[10px] lg:flex hidden w-fit h-fit px-3 py-1 bg-teal-600 rounded-[4px] ">
               {enums.FLS}
             </p>
           </span>

@@ -46,7 +46,7 @@ const TwitterVerse = () => {
         <div className=" w-full lg:w-5/12 h-full rounded-2xl flex-col items-center text-center lg:text-start lg:items-start flex">
           <span className="  flex items-center gap-3 md:gap-2 lg:gap-4 mb-2">
             <i className=" text-4xl md:text-2xl">TwitterVerse</i>
-            <p className=" text-[14px] hidden lg:flex lg:text-[10px] w-fit h-fit px-3 py-1 bg-purple-600 rounded-[4px] ">
+            <p className="open text-[14px] hidden lg:flex lg:text-[10px] w-fit h-fit px-3 py-1 bg-purple-600 rounded-[4px] ">
               {enums.FRN}
             </p>
           </span>

@@ -277,3 +277,43 @@ body {
 .open {
   animation: openBreathe 5s ease-in-out infinite;
 }
+
+@keyframes floatPulse {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  10% {
+    transform: translate(30px, -20px) scale(1.05);
+  }
+  20% {
+    transform: translate(-25px, 15px) scale(0.97);
+  }
+  30% {
+    transform: translate(40px, 25px) scale(1.02);
+  }
+  40% {
+    transform: translate(-35px, -10px) scale(0.98);
+  }
+  50% {
+    transform: translate(20px, 30px) scale(1.03);
+  }
+  60% {
+    transform: translate(-15px, -25px) scale(0.99);
+  }
+  70% {
+    transform: translate(30px, 20px) scale(1.04);
+  }
+  80% {
+    transform: translate(-20px, 10px) scale(0.98);
+  }
+  90% {
+    transform: translate(15px, -15px) scale(1.02);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.projects_bubble {
+  animation: floatPulse 15s ease-in-out infinite;
+}
