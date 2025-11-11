@@ -11,7 +11,8 @@ const ContactForm = () => {
   const [is_consented, set_is_consented] = useState<boolean>(false);
   const [is_loading, set_is_loading] = useState<boolean>(false);
 
-  const handleSend = async () => {
+  const handleSend = async (e: React.FormEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     try {
       const res = await fetch("/api/mail", {
         method: "POST",
