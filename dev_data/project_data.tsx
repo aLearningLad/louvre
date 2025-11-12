@@ -22,6 +22,7 @@ import DotnetTab from "@/components/projects/project_showcases/stack_tabs/dotnet
 import MSSQLTab from "@/components/projects/project_showcases/stack_tabs/mssql_tab";
 import SeesharpTab from "@/components/projects/project_showcases/stack_tabs/seesharp_tab";
 import JWTTab from "@/components/projects/project_showcases/stack_tabs/jwt_tab";
+import { T_individual_project } from "@/types";
 
 export const project_data: T_individual_project[] = [
   {

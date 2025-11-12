@@ -82,7 +82,7 @@ export default function Home() {
         height="130px"
         width="130px"
         skill="Next.js"
-        backgroundColor="rgba(13, 5, 57, 0.34)"
+        backgroundColor="rgba(93, 20, 27, 0.28)"
         icon={<SiNextdotjs color="white" size={30} />}
         font_size={10}
       />

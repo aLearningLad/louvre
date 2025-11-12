@@ -1,14 +1,12 @@
-import { I_project_card, I_project_section } from "@/interfaces";
+import { I_project_section } from "@/interfaces";
 import Link from "next/link";
-import { FaGithub, FaRegEye } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
-import { FcMoneyTransfer } from "react-icons/fc";
-import Image from "next/image";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import TechTab from "@/components/home/about/tech_tab";
 import { AiFillHome } from "react-icons/ai";
 import { enums } from "@/enums";
 import DemoRoutes from "./demo_routes/demo_routes";
+import { T_tech_card } from "@/types";
 
 const ProjectSection: React.FC<I_project_section> = ({
   github_url,

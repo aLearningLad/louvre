@@ -1,3 +1,5 @@
+import { T_tech_tab_info } from "@/types";
+
 export const tech_tab_info: T_tech_tab_info[] = [
   {
     id: 1,

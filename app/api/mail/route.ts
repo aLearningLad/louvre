@@ -1,9 +1,9 @@
 "use server";
 
 import { transporter } from "@/configs/node_mailer";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: NextRequest) {
   const { email, full_name, company, body } = await req.json();
 
   try {

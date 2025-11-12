@@ -1,3 +1,5 @@
+import { T_nav_info } from "@/types";
+
 export const nav_links: T_nav_info[] = [
   // {
   //   id: 1,
@@ -12,6 +14,6 @@ export const nav_links: T_nav_info[] = [
   {
     id: 3,
     title: "CONTACT",
-    href: "/contact", // snaps scroll to about section with id=#About
+    href: "#about", // snaps scroll to about section with id=#About
   },
 ];

@@ -1,4 +1,5 @@
 import { tech_tab_info } from "@/dev_data/tech_tab_info";
+import { T_tech_tab_info } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
